@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.titleLogo_container_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.weatherInfoSection{
+  border: 1px solid #eee;
+  
+}
+.logoText > h1{
+  font-family: 'Permanent Marker', cursive !important;
+  color: rgb(247, 200, 72) !important;
+}
 body{
 
   background-color: #2c3237;

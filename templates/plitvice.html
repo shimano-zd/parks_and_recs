@@ -4,6 +4,11 @@
 <!-- glavni kontejner u kojeg smjestamo elemente -->
 <div class="naslovnaMainContainer">
 
+	<div class="weatherInfoSection">
+			<p>Temperatura: {{ jsonWeather.main.temp}}°C </p>
+			<p>Tlak zraka: {{ jsonWeather.main.pressure}} hPa</p>
+			<p>Vlažnost: {{ jsonWeather.main.humidity}}%</p>
+	</div>
 	<div class="articleGrid">
 
 		<div class="mainColumn">

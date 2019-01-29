@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
 	<script src="main.js"></script>
 	<style>
-
+		
 	</style>
 </head>
 
@@ -18,6 +18,13 @@
 	{% block content %}
 	<!-- glavni kontejner u kojeg smjestamo elemente -->
 	<div class="naslovnaMainContainer">
+
+		<div class="titleLogo_container">
+			<div class="titleLogo_container_title">
+				<div class="logoText"><h1 style="color: rgb(247, 200, 72); font-family: 'Permanent Marker', cursive !important;">Parks&Rec</h1></div>
+			</div>
+
+		</div>
 		<!-- pozdravna poruka na naslovnoj stranici -->
 		<div class="naslovnaNaslov">
 			<h1>Trebate izlet?</h1>
@@ -36,23 +43,29 @@
 					<div class="carousel-item active">
 						<img src="../static/images/plitvice_carousel.jpg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-							<a href="/plitvice"><h5>Plitvička jezera</h5></a>
+							<a href="/plitvice">
+								<h5>Plitvička jezera</h5>
+							</a>
 							<p>16 jezera najstarijeg nacionalnog parka u Hrvatskoj</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="../static/images/risnjak_carousel.jpg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-								<a href="/risnjak"><h5 class="darkText">Risnjak</h5></a>
-								<p class="darkText">Gladni risovi će vas pojesti naživo</p>
-							</div>
+							<a href="/risnjak">
+								<h5 class="darkText">Risnjak</h5>
+							</a>
+							<p class="darkText">Gladni risovi će vas pojesti naživo</p>
+						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="../static/images/paklenica_carousel.jpg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-								<a href="/paklenica"><h5>Paklenica</h5></a>
-								<p>Strme stijene i prostrani horizont</p>
-							</div>
+							<a href="/paklenica">
+								<h5>Paklenica</h5>
+							</a>
+							<p>Strme stijene i prostrani horizont</p>
+						</div>
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,12 +79,12 @@
 			</div>
 		</div>
 
-		
+
 
 	</div>
-	
 
-	
+
+
 	{% endblock %}
 
 

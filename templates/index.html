@@ -9,9 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
 	<script src="main.js"></script>
-	<style>
-		
-	</style>
+	
 </head>
 
 <body>
@@ -27,7 +25,7 @@
 		</div>
 		<!-- pozdravna poruka na naslovnoj stranici -->
 		<div class="naslovnaNaslov">
-			<h1>Trebate izlet?</h1>
+			<h1>{% trans %}Trebate izlet?{% endtrans %}</h1>
 			
 		</div>
 
@@ -44,9 +42,9 @@
 						<img src="../static/images/plitvice_carousel.jpg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<a href="/plitvice">
-								<h5>Plitvička jezera</h5>
+								<h5>{% trans %}Plitvička jezera{% endtrans %}</h5>
 							</a>
-							<p>16 jezera najstarijeg nacionalnog parka u Hrvatskoj</p>
+							<p>{% trans %}16 jezera najstarijeg nacionalnog parka u Hrvatskoj{% endtrans %}</p>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -55,7 +53,7 @@
 							<a href="/risnjak">
 								<h5 class="darkText">Risnjak</h5>
 							</a>
-							<p class="darkText">Gladni risovi će vas pojesti naživo</p>
+							<p class="darkText">{% trans %}Gladni risovi će vas pojesti naživo{% endtrans %}</p>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -64,7 +62,7 @@
 							<a href="/paklenica">
 								<h5>Paklenica</h5>
 							</a>
-							<p>Strme stijene i prostrani horizont</p>
+							<p>{% trans %}Strme stijene i prostrani horizont{% endtrans %}</p>
 						</div>
 					</div>
 				</div>

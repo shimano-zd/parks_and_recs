@@ -1,8 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
 import requests
+from flask_bootstrap import Bootstrap
+from flask_babel import Babel
 
 app = Flask(__name__)
 app.debug = True
+bootstrap = Bootstrap(app)
+app.secret_key = 'NEKA_ŽVRLJOTINA'
+
+app.config['BABEL_DEFAULT_LOCALE'] = 'hr'
+babel = Babel(app)
 
 
 @app.route("/")
@@ -40,6 +47,12 @@ def page_not_found(e):
 @app.errorhandler(500)
 def server_error(e):
     return render_template("500.html"), 500
+
+@babel.localeselector
+def get_locale():
+    if request.args.get('lang'):
+        session['lang'] = request.args.get('lang')
+    return session.get('lang','en')
 
 def getWeather(id):
 

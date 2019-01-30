@@ -26,6 +26,20 @@ def risnjak():
 def paklenica():
     return render_template("paklenica.html", jsonWeather=getWeather(3189964))
 
+@app.route("/smjestaj")
+def smjestaj():
+    return render_template("smjestaj.html")
+
+@app.route("/novosti")
+def novosti():
+    return render_template("novosti.html")
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+@app.errorhandler(500)
+def server_error(e):
+    return render_template("500.html"), 500
 
 def getWeather(id):
 

@@ -1,6 +1,100 @@
 {% extends "base.html" %}
 
 {% block content %}
+<<<<<<< HEAD
+=======
+<!-- glavni kontejner u kojeg smjestamo elemente -->
+<div class="naslovnaMainContainer">
+
+	<div class="weatherInfoSection">
+		<p>Temperatura: {{ jsonWeather.main.temp}}°C </p>
+		<p>Tlak zraka: {{ jsonWeather.main.pressure}} hPa</p>
+		<p>Vlažnost: {{ jsonWeather.main.humidity}}%</p>
+	</div>
+	<div class="articleGrid">
+
+		<div class="mainColumn">
+			<div class="mainColumn_article">
+
+				<h2 style="color: rgb(247, 200, 72);">{% trans %}Zašto Paklenica?{% endtrans %}</h2>
+
+				<p>{% trans %}Zbog svoje jedinstvene prirodne osnove, izuzetnih geomorfoloških oblika i veličanstvenih šuma, prostor Velike i
+					Male Paklenice već je 1949. g. proglašen nacionalnim parkom. Osnovni razlog proglašenja ovog prostora nacionalnim
+					parkom bila je zaštita najočuvanijeg i najvećeg šumskog kompleksa na području Dalmacije.{% endtrans %}
+
+				</p>
+				<iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45626.61712961173!2d15.548932531037591!3d44.37849845993304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476191109568e00d%3A0xb2963721bdd928e4!2sPaklenica+National+Park!5e0!3m2!1sen!2shr!4v1548764617001"
+				 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p>{% trans %}Nacionalni park Paklenica se prostire na površini od 95 km², na južnim obroncima Velebita, ispod najviših vrhova
+					Vaganskog vrha (1757m) i Svetog brda (1753 m). Obuhvaća područje bujičnih tokova Velike i Male Paklenice, odnosno
+					njihove prepoznatljive kanjone okomito urezane u južne padine Velebita, te širi okolni prostor. Na relativno malom
+					području susreće se iznimno bogatstvo geomorfoloških pojava i oblika, raznolik biljni i životinjski svijet,
+					atraktivni krajolici i netaknuta priroda. Raznolikost živog svijeta je uvjetovana klimatskim karakteristikama ali
+					i bogatom i raznolikom geološkom prošlosti.{% endtrans %}</p>
+			</div>
+
+
+			<div class="mainColumn_article">
+
+				<h2 style="color:rgb(247, 200, 72)">{% trans %}Manita Peć{% endtrans %}</h2>
+
+				<p>{% trans %}Manita peć je jedina špilja na prostoru Parka koja je otvorena i uređena za posjet. Svojom prostranošću i
+					ljepotom ukrasa oduševljava posjetitelje još od davne 1937. godine, kada je nakon uređenja staze započelo njeno
+					posjećivanje. Ulaz u špilju nalazi se na 570 m nadmorske visine, a uspon od parkirališta u Velikoj Paklenici do
+					nje traje oko sat i pol.
+
+					Špilja obiluje špiljskim ukrasima ili sigama. Oni se razlikuju prema obliku i načinu postanka. Najčešći tipovi
+					siga koje možete vidjeti u Manitoj peći su stalagmiti, stalaktiti, sigasti stupovi (stalagnati) i špiljske
+					kamenice (kaskade). Neki od tih ukrasa dobili su imena po svojim zanimljivim oblicima, primjerice kaciga, orgulje
+					i vještica.{% endtrans %}</p>
+				<img src="../static/images/paklenica_spilja.jpg" alt="">
+				<p>
+
+					{% trans %}Ukoliko se odlučite posjetiti Manitu peć, u njoj ćete provesti oko 30 minuta u pratnji vodiča i upoznati mnoge
+					tajne tog zanimljivog podzemnog svijeta. Temperatura u špilji cijele godine kreće se oko 9°C, pa vam preporučujemo
+					da u toplijem dijelu godine ponesete odgovarajuću odjeću. Obilazak špilje je moguć samo u pratnji vodiča.{% endtrans %}
+
+				</p>
+
+
+			</div>
+		</div>
+
+
+		<div class="sideColumn">
+			<div class="sideColumn_article">
+				<h2 style="color:rgb(247, 200, 72)">{% trans %}Neki članak sa strane a ima veze s Paklenicom{% endtrans %}</h2>
+				<img src="../static/images/paklenica_prolaz.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis impedit alias ipsa atque omnis sequi
+					architecto repellat eum, nulla nemo eligendi aut quam. Ipsa molestiae velit voluptatibus quia nisi facilis nemo a
+					aliquid, deserunt sint fugiat dignissimos placeat impedit architecto excepturi minus quas inventore cumque!
+					Explicabo perspiciatis eligendi dolorum quod facere vero repellat quas excepturi itaque quo assumenda eius,
+					voluptas ipsum quasi debitis officia. Dignissimos cumque quidem id corrupti blanditiis alias maiores eos,
+					molestias autem vitae mollitia doloribus pariatur?</p>
+
+			</div>
+			<div class="sideColumn_article">
+				<h2 style="color:rgb(247, 200, 72)">{% trans %}Planinarenje{% endtrans %}</h2>
+				<img src="../static/images/paklenica_planinarenje.jpg" alt="">
+				<p>{% trans %}Pješačenje je jedini način da stvarno upoznate Paklenicu. Na području Parka postoji 150-200 km staza i putova,
+					od turističkih, koji iz kanjona Velike Paklenice vode do špilje Manite peći, šumarske kuće „Lugarnice“ i
+					planinarskog doma, do planinarskih koji vode do najviših velebitskih vrhova. Putovi u Parku obilježeni su tablama
+					i markirani planinarskim oznakama.{% endtrans %}</p>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+</div>
+>>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
 
 
 

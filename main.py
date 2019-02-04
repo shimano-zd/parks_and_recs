@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session
 import requests
+<<<<<<< HEAD
 from flask_babel import Babel
 import json
 import random
@@ -11,6 +12,17 @@ app.secret_key = 'secret_key'
 
 #prijevod
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+=======
+from flask_bootstrap import Bootstrap
+from flask_babel import Babel
+
+app = Flask(__name__)
+app.debug = True
+bootstrap = Bootstrap(app)
+app.secret_key = 'NEKA_ŽVRLJOTINA'
+
+app.config['BABEL_DEFAULT_LOCALE'] = 'hr'
+>>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
 babel = Babel(app)
 
 
@@ -55,6 +67,26 @@ def raftingCalculator():
     return render_template("raftingCalculator.html")
 
 
+@app.route("/smjestaj")
+def smjestaj():
+    return render_template("smjestaj.html")
+
+@app.route("/novosti")
+def novosti():
+    return render_template("novosti.html")
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+@app.errorhandler(500)
+def server_error(e):
+    return render_template("500.html"), 500
+
+@babel.localeselector
+def get_locale():
+    if request.args.get('lang'):
+        session['lang'] = request.args.get('lang')
+    return session.get('lang','en')
 
 def getWeather(id):
 

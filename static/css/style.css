@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
+<<<<<<< HEAD
 .naslovnaMainContainer{
   margin-top: 5%;
+=======
+
+.titleLogo_container_title {
+  width: 100%;
+>>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
   display: flex;
   justify-content: center;
   align-items: center;

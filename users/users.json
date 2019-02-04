@@ -1,0 +1,61 @@
+[
+
+    {
+        "id" : 1,
+        "name" : "Steven Quebek",
+        "comment" : "I had a wonderful time! The river is fast, but not too strong, so I could enjoy even though I am inexperienced. My wife fell into the river and we haven't seen her ever since.",
+        "excitement" : 85,
+        "price" : 50
+    },
+    {
+        "id" : 2,
+        "name" : "Ivana Kindl",
+        "comment" : "To be honest, I made a mistake and went rafting with Jacques Houdek. Have you seen that man? Well, bascially, we couldn't really move from the starting position and we spent the whole afternoon stuck.",
+        "excitement" : 15,
+        "price" : 65
+    },
+    {
+        "id" : 3,
+        "name" : "Pamela Anderson",
+        "comment" : "Wonderful! I had such a great time, my T-shirt was wet all the time so my rafting instructor payed extra attention to me!",
+        "excitement" : 90,
+        "price" : 90
+    },
+    {
+        "id" : 4,
+        "name" : "Susan Green",
+        "comment" : "Absolutely horrible! As a proud member of Christian Church of Purity, I do not recommend any true believer to go there. I saw a blonde woman in a wet T-shirt, attracting her instructor's attention as if she was the Devil herself!",
+        "excitement" : 10,
+        "price" : 10
+    },
+    {
+        "id" : 5,
+        "name" : "Toni Cetinski",
+        "comment" : "This was very good, I had an exciting time but I'm afraid I might have hurt my vocal chords when I accidentally hit myself with an oar.",
+        "excitement" : 75,
+        "price" : 90
+    },
+    {
+        "id" : 6,
+        "name" : "Bob Rosemary",
+        "comment" : "I am not good at this. I thought maybe I could give it a try, but I fell into the water seven times. SEVEN! I'm lucky I didn't die... Maybe I should try something else.",
+        "excitement" : 40,
+        "price" : 50
+    },
+    {
+        "id" : 7,
+        "name" : "Joey Diaz",
+        "comment" : "Let me tell you something, Joe Rogan. This was tremendous. I had such an exciting time, I stood up in the middle of the boat and yelled like that time I was overdosed on cocaine back in '87 on West Boulevard",
+        "excitement" : 100,
+        "price" : 100
+    },
+    {
+        "id" : 8,
+        "name" : "Mate Miso Kovac",
+        "comment" : "Stankovicu, kad sam ja zaveslao niz tu rijeku, nabujalu, podivljalu, pomislio sam to je to. Stankovicu, nebo se spojilo sa zemljom, ovako nesto se dogodi samo jednom u zivotu.",
+        "excitement" : 100,
+        "price" : 100
+    }
+    
+
+]

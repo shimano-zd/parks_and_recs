@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="parkBanner">
+    <img src="../static/images/zrmanja_banner.jpg" alt="" style="width: 100%; height: auto;">
+</div>
+<div class="jumbotron">
+    <h1 class="display-4">Calculate all your needs!</h1>
+    <p class="lead">Simply enter the desired options below</p>
+    <hr class="my-4">
+</div>
+
+<div class="calcMainWrapper">
+    <div class="calcContainer">
+
+        <div class="calcLeft">
+            <h1 style="color: rgb(9, 84, 182);"></h1>
+            <br>
+            <h5 style="padding: 10px">Number of persons</h5>
+            <select class="form-control" id="selectPersons">
+                <option value="0" selected disabled hidden>Choose here</option>
+                <option value="100">1</option>
+                <option value="180">2</option>
+                <option value="240">3</option>
+                <option value="300">4 (free extra ticket!)</option>
+
+            </select>
+            <h5 style="padding: 10px">Route type</h5>
+            <select class="form-control" id="selectRoute">
+                <option value="0" selected disabled hidden>Choose here</option>
+                <option value="20">Easy one, I'm just a beginner</option>
+                <option value="40">Moderate one, I have some experience already!</option>
+                <option value="60">Hard mode! I need an adrenaline trip!</option>
+            </select>
+            <h5 style="padding: 10px">Duration of your adventure</h5>
+            <select class="form-control" id="selectDuration">
+                <option value="0" selected disabled hidden>Choose here</option>
+                <option value="20">Up to 1 hour</option>
+                <option value="30">Between 1 and 2 hours</option>
+                <option value="50">The entire afternoon!</option>
+            </select>
+            <br>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkBoxMeal" onclick="mealBoxChanged()">
+                <label class="form-check-label" for="defaultCheck1">
+                    I want to take a full course meal as well
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkBoxEquipment" onclick="equipmentBoxChanged()">
+                <label class="form-check-label" for="defaultCheck2">
+                    I need to rent the equipment, I don't have mine
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkBoxGift" onclick="giftBoxChanged()">
+                <label class="form-check-label" for="defaultCheck3">
+                    I want a surprise gift box!
+                </label>
+            </div>
+        </div>
+
+        <div class="calcRight">
+
+            <div class="calcDisplay">
+                <h5 style="color: #9e9fa0">Total Price</h5>
+                <h4 id="totalPriceID">00,00 KN</h4>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<script>
+    var totalPrice = 0;
+    var personsdifference = 0;
+    var routedifference = 0;
+    var durationdifference = 0;
+
+    updatePrice = () => {
+        document.getElementById("totalPriceID").innerHTML = totalPrice + ",00 KN"
+
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('select[id="selectPersons"]').onchange = personsChanged;
+    }, false);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('select[id="selectRoute"]').onchange = routeChanged;
+    }, false);
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('select[id="selectDuration"]').onchange = durationChanged;
+    }, false);
+
+
+
+    mealBoxChanged = () => {
+
+        let meal = document.getElementById("checkBoxMeal");
+
+        (meal.checked == true) ? totalPrice += 30 : totalPrice -= 30;
+        updatePrice()
+    }
+    equipmentBoxChanged = () => {
+
+        let eq = document.getElementById("checkBoxEquipment");
+
+        (eq.checked == true) ? totalPrice += 50: totalPrice -= 50;
+        updatePrice()
+    }
+    giftBoxChanged = () => {
+
+        let gift = document.getElementById("checkBoxGift");
+
+        (gift.checked == true) ? totalPrice += 15: totalPrice -= 15;
+        updatePrice()
+    }
+    routeChanged = e => {
+
+
+        if (e.target.value !== "") {
+
+            totalPrice -= routedifference;
+
+            totalPrice += Number(e.target.value);
+
+            routedifference = Number(e.target.value)
+
+            updatePrice()
+        }
+    }
+
+    personsChanged = e => {
+
+
+        if (e.target.value !== "") {
+
+            totalPrice -= personsdifference;
+
+            totalPrice += Number(e.target.value);
+
+            personsdifference = Number(e.target.value);
+
+            updatePrice()
+
+
+        }
+
+
+    }
+
+    durationChanged = e => {
+
+
+        if (e.target.value !== "") {
+
+            totalPrice -= durationdifference;
+
+            totalPrice += Number(e.target.value);
+
+            durationdifference = Number(e.target.value)
+
+            updatePrice()
+        }
+    }
+</script>
+
+{% endblock %}

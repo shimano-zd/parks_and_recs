@@ -54,9 +54,6 @@ def paklenica():
 def raftingCalculator():
     return render_template("raftingCalculator.html")
 
-@app.route("/risnjak")
-def risnjak():
-    return render_template("risnjak.html", jsonWeather=getWeather(3189964))
 
 
 def getWeather(id):

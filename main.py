@@ -46,8 +46,10 @@ def zrmanja():
     jsonUserReviewZrmanja = open('./users/usersZrmanja.json').read()
     data = json.loads(jsonUserReviewZrmanja)
 
-    user1 = getRandomPeople(data)[0]
-    user2 = getRandomPeople(data)[1]
+    userTuple = getRandomPeople(data)
+
+    user1 = userTuple[0]
+    user2 = userTuple[1]
     
     # 3194245 je Obrovac
     return render_template("zrmanja.html", jsonWeather=getWeather(3194245), user1=user1, user2=user2)
@@ -58,30 +60,32 @@ def paklenica():
     jsonUserReviewPaklenica = open('./users/usersPaklenica.json').read()
     data = json.loads(jsonUserReviewPaklenica)
 
-    user1 = getRandomPeople(data)[0]
-    user2 = getRandomPeople(data)[1]
+    userTuple = getRandomPeople(data)
+
+    user1 = userTuple[0]
+    user2 = userTuple[1]
 
     # 3189964 je Starigrad
 
     return render_template("paklenica.html", jsonWeather=getWeather(3189964), user1=user1, user2=user2)
 
 def getRandomPeople(data):
-
     numberOfPeople = len(data)
     listOfNumbers = list()
-    randomNum = random.randint(0, (numberOfPeople -1))
+    randomNum = random.randint(0, (numberOfPeople-1))
     listOfNumbers.append(randomNum)
 
     while(len(listOfNumbers) < 2):
-        randomNum2 = random.randint(0, (numberOfPeople -1))
+        randomNum2 = random.randint(0, (numberOfPeople-1))
         if(randomNum2 not in listOfNumbers):
             listOfNumbers.append(randomNum2)
 
     randomPerson1 = data[listOfNumbers[0]]
     randomPerson2 = data[listOfNumbers[1]]
-    randomPersonTuple = [randomPerson1, randomPerson2]
+    randomPersonTuple = [randomPerson1,randomPerson2]
 
     return randomPersonTuple
+
 
 @app.route("/raftingCalculator")
 def raftingCalculator():

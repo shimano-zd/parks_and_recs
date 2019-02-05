@@ -62,6 +62,20 @@
         "comment" : "I'm a regular visitor here, I love the outdoors and the climb is exhausting but rewarding. Unfortunately, the guest house didn't have any cevap dish, and I was really looking forward to it...",
         "excitement" : 80,
         "price" : 70
+    },
+    {
+        "id" : 10,
+        "name" : "Sime Martinov",
+        "comment" : "Ne razumijem ljude koji ovo rade, cemu ova tortura i patnja? Platio sam valjda 200 kuna da se izubijam i da tjedan dana kasnije ne mogu sjesti na WC skoljku od bolova. Nisam bas fan.",
+        "excitement" : 25,
+        "price" : 40
+    },
+    {
+        "id" : 11,
+        "name" : "Ivica Kustura",
+        "comment" : "Odlicna stijena za penjanje, ali moram primjetiti da je alarmantan nedostatak sanitarnih cvorova po stazi. Bilo bi u redu da barem jedan mali WC stave na pola puta do vrha stijene.",
+        "excitement" : 70,
+        "price" : 70
     }
     
 

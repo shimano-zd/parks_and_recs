@@ -134,9 +134,9 @@
                                 <div class="card-body">
                                     <p class="card-text weatherLabel">{% trans %}Humidity{% endtrans %}: </p>
                                     <p class="weatherInfo">{{jsonWeather.main.humidity}}%</p>
-                                    <p class="card-text weatherLabel">{% trans %}Rain past 3 hours{% endtrans %}: </p>
+                                    <p class="card-text weatherLabel">{% trans %}Pressure{% endtrans %}: </p>
 
-                                    <p class="weatherInfo">Sorry, the API is broken :(</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.pressure}}&nbsp;hPa</p>
                                 </div>
                             </div>
                             <div class="weatherGridClouds"></div>

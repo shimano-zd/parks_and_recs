@@ -17,6 +17,7 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 
 babel = Babel(app)
 
+# forma i provjera unosa
 class LoginForm(FlaskForm):
     name = StringField('name', validators=[InputRequired(), Length(min=3, message="Please enter at least 3 characters")])
     email = StringField('email', validators=[InputRequired(), Email("This field requires a valid email address")])
@@ -40,6 +41,9 @@ def index():
 @app.route("/getstarted")
 def getstarted():
     return render_template("getstarted.html")
+
+# zrmanja i paklenica dobivaju podatke o korisnicima iz jsona u root direktoriju
+# funkcija getRandomPeople() odabira nasumicne ljude i salje u view
 
 @app.route("/zrmanja")
 def zrmanja():
@@ -75,6 +79,7 @@ def getRandomPeople(data):
     randomNum = random.randint(0, (numberOfPeople-1))
     listOfNumbers.append(randomNum)
 
+    # petlja sluzi sprjecavanju unosa istog korisnika dva puta
     while(len(listOfNumbers) < 2):
         randomNum2 = random.randint(0, (numberOfPeople-1))
         if(randomNum2 not in listOfNumbers):
@@ -86,7 +91,7 @@ def getRandomPeople(data):
 
     return randomPersonTuple
 
-
+# kalkulatori za izracun cijena
 @app.route("/raftingCalculator")
 def raftingCalculator():
     return render_template("raftingCalculator.html")
@@ -94,13 +99,7 @@ def raftingCalculator():
 def climbingCalculator():
     return render_template("climbingCalculator.html")
 
-@app.route("/smjestaj")
-def smjestaj():
-    return render_template("smjestaj.html")
-
-@app.route("/novosti")
-def novosti():
-    return render_template("novosti.html")
+# error handleri
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -115,6 +114,7 @@ def get_locale():
         session['lang'] = request.args.get('lang')
     return session.get('lang','en')
 
+# dohvat podataka o vremenu
 def getWeather(id):
 
     parameters = { 'appid': '7f1839b423ed0ec9c2c366cab3867ca2',

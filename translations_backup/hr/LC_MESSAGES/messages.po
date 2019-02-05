@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-05 12:47+0100\n"
-"PO-Revision-Date: 2019-02-05 12:48+0100\n"
+"POT-Creation-Date: 2019-02-04 13:35+0100\n"
+"PO-Revision-Date: 2019-02-04 13:36+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: hr\n"
 "Language-Team: hr <LL@li.org>\n"
@@ -51,14 +51,13 @@ msgstr "Počnite ovdje"
 msgid "Parks and Activities"
 msgstr "Parkovi i aktivnosti"
 
-#: templates/base.html:41 templates/paklenica.html:85
-#: templates/subscribe.html:24 templates/zrmanja.html:87
-msgid "Subscribe"
-msgstr "Pretplata"
+#: templates/base.html:41
+msgid "General advice"
+msgstr "Opći savjeti"
 
 #: templates/base.html:48
 msgid "Search"
-msgstr "Pretraga"
+msgstr "Pretraži"
 
 #: templates/climbingCalculator.html:10 templates/raftingCalculator.html:10
 msgid "Calculate all your needs!"
@@ -189,8 +188,8 @@ msgid "RAFTING ON ZRMANJA"
 msgstr "RAFTING NA ZRMANJI"
 
 #: templates/index.html:44
-msgid "SUBSCRIBE AND GET SUPER DEALS"
-msgstr "PRETPLATITE SE ZA SUPER AKCIJE"
+msgid "LEAVE YOUR OWN REVIEWS"
+msgstr "OSTAVITE SVOJE OSVRTE"
 
 #: templates/index.html:53
 msgid "Previous"
@@ -198,7 +197,7 @@ msgstr "Prethodna"
 
 #: templates/index.html:57
 msgid "Next"
-msgstr "Sljedeca"
+msgstr "Sljedeća"
 
 #: templates/index.html:71
 msgid "Looking for an adventure?"
@@ -235,69 +234,27 @@ msgid "Click here to choose the type of your activity and calculate the price."
 msgstr "Kliknite ovdje za odabir aktivnosti i izračun cijene"
 
 #: templates/paklenica.html:13 templates/zrmanja.html:13
-msgid ""
-"Take the\n"
-"        activity"
+msgid "Take the activity"
 msgstr "Započni"
 
-#: templates/paklenica.html:19
+#: templates/paklenica.html:18
 msgid "User reviews of Paklenica climbing"
 msgstr "Osvrti korisnika na Paklenici"
 
-#: templates/paklenica.html:31 templates/paklenica.html:56
-#: templates/zrmanja.html:31 templates/zrmanja.html:56
+#: templates/paklenica.html:30 templates/paklenica.html:54
+#: templates/zrmanja.html:30 templates/zrmanja.html:54
 msgid "Review"
 msgstr "Osvrt"
 
-#: templates/paklenica.html:32 templates/paklenica.html:57
-#: templates/zrmanja.html:32 templates/zrmanja.html:57
+#: templates/paklenica.html:31 templates/paklenica.html:55
+#: templates/zrmanja.html:31 templates/zrmanja.html:55
 msgid "Excitement"
 msgstr "Uzbuđenje"
 
-#: templates/paklenica.html:39 templates/paklenica.html:64
-#: templates/zrmanja.html:39 templates/zrmanja.html:64
+#: templates/paklenica.html:37 templates/paklenica.html:61
+#: templates/zrmanja.html:37 templates/zrmanja.html:61
 msgid "Value"
 msgstr "Isplativnost"
-
-#: templates/paklenica.html:83 templates/zrmanja.html:83
-msgid "Want to subscribe? We'll keep you updated on any special deals"
-msgstr "Želite li se pretplatiti? Obavještavati ćemo vas o svim posebnim akcijama"
-
-#: templates/paklenica.html:94 templates/zrmanja.html:97
-msgid "General Information about the Park"
-msgstr "Opće informacije o parku"
-
-#: templates/paklenica.html:99 templates/zrmanja.html:102
-msgid "Map"
-msgstr "Karta"
-
-#: templates/paklenica.html:101 templates/zrmanja.html:104
-msgid "Weather"
-msgstr "Vrijeme"
-
-#: templates/paklenica.html:103 templates/zrmanja.html:106
-msgid "Gallery"
-msgstr "Galerija"
-
-#: templates/paklenica.html:120 templates/zrmanja.html:123
-msgid "Temperature"
-msgstr "Temperatura"
-
-#: templates/paklenica.html:132 templates/zrmanja.html:135
-msgid "Humidity"
-msgstr "Vlaga"
-
-#: templates/paklenica.html:134 templates/zrmanja.html:137
-msgid "Pressure"
-msgstr "Tlak zraka"
-
-#: templates/paklenica.html:143 templates/zrmanja.html:146
-msgid "Sky"
-msgstr "Oblaci"
-
-#: templates/paklenica.html:145 templates/zrmanja.html:148
-msgid "Wind"
-msgstr "Vjetar"
 
 #: templates/raftingCalculator.html:27
 msgid "free extra ticket"
@@ -309,7 +266,7 @@ msgstr "Tip rute"
 
 #: templates/raftingCalculator.html:35
 msgid "Hard mode! I need an adrenaline trip"
-msgstr "Teško! Treba mi adrenalinski trip"
+msgstr "Teška! Treba mi adrenaliski trip!"
 
 #: templates/raftingCalculator.html:37
 msgid "Duration of your adventure"
@@ -327,18 +284,6 @@ msgstr "Između 1 i 2 sata"
 msgid "The entire afternoon!"
 msgstr "Cijelo popodne!"
 
-#: templates/subscribe.html:8
-msgid "Subscribe to our newsletter"
-msgstr "Pretplatite se na naše vijesti"
-
-#: templates/subscribe.html:10
-msgid ""
-"By subscribing, you will get the best deals and special events! We'll "
-"send you coupons every time there's a special discount!"
-msgstr ""
-"Ako se pretplatite dobiti ćete najbolje akcije i popuste za avanturističke evente! "
-"Poslati ćemo vam kupon svaki put kad se pojavi akcija!"
-
 #: templates/zrmanja.html:9
 msgid "Rafting on Zrmanja"
 msgstr "Rafting na Zrmanji"
@@ -347,7 +292,7 @@ msgstr "Rafting na Zrmanji"
 msgid "Experience a wild ride through river rapids!"
 msgstr "Isprobajte napetu vožnju po rječnim brzacima!"
 
-#: templates/zrmanja.html:19
+#: templates/zrmanja.html:18
 msgid "User reviews of Zrmanja rafting"
-msgstr "Osvrti korisnika na rafting na Zrmanji"
+msgstr "Osvrti korisnika na Zrmanju"
 

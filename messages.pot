@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-04 13:35+0100\n"
+"POT-Creation-Date: 2019-02-05 12:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,9 @@ msgstr ""
 msgid "Parks and Activities"
 msgstr ""
 
-#: templates/base.html:41
-msgid "General advice"
+#: templates/base.html:41 templates/paklenica.html:85
+#: templates/subscribe.html:24 templates/zrmanja.html:87
+msgid "Subscribe"
 msgstr ""
 
 #: templates/base.html:48
@@ -179,7 +180,7 @@ msgid "RAFTING ON ZRMANJA"
 msgstr ""
 
 #: templates/index.html:44
-msgid "LEAVE YOUR OWN REVIEWS"
+msgid "SUBSCRIBE AND GET SUPER DEALS"
 msgstr ""
 
 #: templates/index.html:53
@@ -222,26 +223,68 @@ msgid "Click here to choose the type of your activity and calculate the price."
 msgstr ""
 
 #: templates/paklenica.html:13 templates/zrmanja.html:13
-msgid "Take the activity"
+msgid ""
+"Take the\n"
+"        activity"
 msgstr ""
 
-#: templates/paklenica.html:18
+#: templates/paklenica.html:19
 msgid "User reviews of Paklenica climbing"
 msgstr ""
 
-#: templates/paklenica.html:30 templates/paklenica.html:54
-#: templates/zrmanja.html:30 templates/zrmanja.html:54
+#: templates/paklenica.html:31 templates/paklenica.html:56
+#: templates/zrmanja.html:31 templates/zrmanja.html:56
 msgid "Review"
 msgstr ""
 
-#: templates/paklenica.html:31 templates/paklenica.html:55
-#: templates/zrmanja.html:31 templates/zrmanja.html:55
+#: templates/paklenica.html:32 templates/paklenica.html:57
+#: templates/zrmanja.html:32 templates/zrmanja.html:57
 msgid "Excitement"
 msgstr ""
 
-#: templates/paklenica.html:37 templates/paklenica.html:61
-#: templates/zrmanja.html:37 templates/zrmanja.html:61
+#: templates/paklenica.html:39 templates/paklenica.html:64
+#: templates/zrmanja.html:39 templates/zrmanja.html:64
 msgid "Value"
+msgstr ""
+
+#: templates/paklenica.html:83 templates/zrmanja.html:83
+msgid "Want to subscribe? We'll keep you updated on any special deals"
+msgstr ""
+
+#: templates/paklenica.html:94 templates/zrmanja.html:97
+msgid "General Information about the Park"
+msgstr ""
+
+#: templates/paklenica.html:99 templates/zrmanja.html:102
+msgid "Map"
+msgstr ""
+
+#: templates/paklenica.html:101 templates/zrmanja.html:104
+msgid "Weather"
+msgstr ""
+
+#: templates/paklenica.html:103 templates/zrmanja.html:106
+msgid "Gallery"
+msgstr ""
+
+#: templates/paklenica.html:120 templates/zrmanja.html:123
+msgid "Temperature"
+msgstr ""
+
+#: templates/paklenica.html:132 templates/zrmanja.html:135
+msgid "Humidity"
+msgstr ""
+
+#: templates/paklenica.html:134 templates/zrmanja.html:137
+msgid "Pressure"
+msgstr ""
+
+#: templates/paklenica.html:143 templates/zrmanja.html:146
+msgid "Sky"
+msgstr ""
+
+#: templates/paklenica.html:145 templates/zrmanja.html:148
+msgid "Wind"
 msgstr ""
 
 #: templates/raftingCalculator.html:27
@@ -272,6 +315,16 @@ msgstr ""
 msgid "The entire afternoon!"
 msgstr ""
 
+#: templates/subscribe.html:8
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: templates/subscribe.html:10
+msgid ""
+"By subscribing, you will get the best deals and special events! We'll "
+"send you coupons every time there's a special discount!"
+msgstr ""
+
 #: templates/zrmanja.html:9
 msgid "Rafting on Zrmanja"
 msgstr ""
@@ -280,7 +333,7 @@ msgstr ""
 msgid "Experience a wild ride through river rapids!"
 msgstr ""
 
-#: templates/zrmanja.html:18
+#: templates/zrmanja.html:19
 msgid "User reviews of Zrmanja rafting"
 msgstr ""
 

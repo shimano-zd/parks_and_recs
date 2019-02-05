@@ -79,15 +79,18 @@
 </div>
 
 <script>
+    // globalne varijable
     var totalPrice = 0;
     var personsdifference = 0;
     var routedifference = 0;
     var durationdifference = 0;
 
+    // prikaz izracunate ukupne cijene
     updatePrice = () => {
         document.getElementById("totalPriceID").innerHTML = totalPrice + ",00 KN"
 
     }
+    //eventListeneri
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('select[id="selectPersons"]').onchange = personsChanged;
     }, false);
@@ -100,7 +103,7 @@
     }, false);
 
 
-
+    // kod svake promjene, racunaju se razlike i postavljaju u globalne varijable
     mealBoxChanged = () => {
 
         let meal = document.getElementById("checkBoxMeal");

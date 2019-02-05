@@ -76,7 +76,22 @@
         "comment" : "Odlicna stijena za penjanje, ali moram primjetiti da je alarmantan nedostatak sanitarnih cvorova po stazi. Bilo bi u redu da barem jedan mali WC stave na pola puta do vrha stijene.",
         "excitement" : 70,
         "price" : 70
+    },
+    {
+        "id" : 12,
+        "name" : "Ana Strenja",
+        "comment" : "Ovo je bilo odlicno! Prijavila sam se za najtezu rutu i potpuno me iscrpilo, ali pogled je odlican. Steta sto sam u jednom trenu vidila covjeka kako vrsi nuzdu na vrh brda, mislim da je to bio Ivica",
+        "excitement" : 80,
+        "price" : 80
+    },
+    {
+        "id" : 13,
+        "name" : "Ivan Grzan",
+        "comment" : "Bilo je dobro, penja san se do vrha, ali nazalost nisan dobro zatvorija dzepove od jakete u kojoj su mi bili sendvici i do vrha planine mi je vecina sendvica ispala doli, dvista metara ispod",
+        "excitement" : 70,
+        "price" : 80
     }
+
     
 
 ]

@@ -286,7 +286,9 @@
 </div>
 
 <script>
-    function fillElements() {
+    // funkcija sluzi dohvatu svih "barova" na stranici, tj horizontalnih crta koje predstavljaju zadovoljstvo korisnika
+    
+    fillElements =() => {
         let elements = document.getElementsByClassName("progress-bar");
 
         for (let e of elements) {
@@ -297,29 +299,32 @@
             let barNumElem = document.getElementById(barNumID);
             let num = barNumElem.innerHTML
 
-
+            // poziva funkciju koja puni "bar" s obzirom na vrijednosti osvrta korisnika iz JSONa
             fillPercent(barID, num);
 
         }
     }
     fillElements();
+
+    // funkcija za postavljanje slika na korisnicki osvrt; ime slike i ime korisnika u JSONu moraju biti identicni da bi radila
     changeLeftPicture();
     changeRightPicture();
 
-    function changeLeftPicture() {
+    function changeLeftPicture(){
         let leftPicture = document.getElementById("picUserLeft");
         let username = document.getElementById("picUserLeftID").innerHTML;
         leftPicture.src = "../static/images/" + username + ".jpg";
 
     }
 
-    function changeRightPicture() {
+    function changeRightPicture(){
         let rightPicture = document.getElementById("picUserRight");
         let username = document.getElementById("picUserRightID").innerHTML;
         rightPicture.src = "../static/images/" + username + ".jpg";
     }
 
-    function fillPercent(barID, num) {
+    // iscrtavanje horizontalnog "bara"
+    function fillPercent(barID, num){
 
         let width = 1;
         let id = setInterval(frame, 2);

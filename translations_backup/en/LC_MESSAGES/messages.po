@@ -1,4 +1,4 @@
-# Croatian translations for PROJECT.
+# English translations for PROJECT.
 # Copyright (C) 2019 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -7,164 +7,160 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-05 12:47+0100\n"
-"PO-Revision-Date: 2019-02-05 12:48+0100\n"
+"POT-Creation-Date: 2019-02-04 13:35+0100\n"
+"PO-Revision-Date: 2019-02-04 13:36+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: hr\n"
-"Language-Team: hr <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
+
+
 #: templates/404.html:10 templates/500.html:10
 msgid "Oops!"
-msgstr "Ups!"
+msgstr ""
 
 #: templates/404.html:11
 msgid "There is no such page"
-msgstr "Ta stranica ne postoji"
+msgstr ""
 
 #: templates/404.html:13
 msgid "Maybe you misspelled something?"
-msgstr "Možda ste nešto krivo napisali?"
+msgstr ""
 
 #: templates/500.html:11
 msgid "There has been a problem"
-msgstr "Pojavio se problem"
+msgstr ""
 
 #: templates/500.html:13
 msgid "Our server is having difficulties finding that information"
-msgstr "Server ima problema s tom informacijom"
+msgstr ""
 
 #: templates/base.html:16
 msgid "Home"
-msgstr "Naslovna"
+msgstr ""
 
 #: templates/base.html:30
 msgid "Get Started"
-msgstr "Počnite ovdje"
+msgstr ""
 
 #: templates/base.html:35
 msgid "Parks and Activities"
-msgstr "Parkovi i aktivnosti"
+msgstr ""
 
-#: templates/base.html:41 templates/paklenica.html:85
-#: templates/subscribe.html:24 templates/zrmanja.html:87
-msgid "Subscribe"
-msgstr "Pretplata"
+#: templates/base.html:41
+msgid "General advice"
+msgstr ""
 
 #: templates/base.html:48
 msgid "Search"
-msgstr "Pretraga"
+msgstr ""
 
 #: templates/climbingCalculator.html:10 templates/raftingCalculator.html:10
 msgid "Calculate all your needs!"
-msgstr "Izračunajte sve što vam je potrebno!"
+msgstr ""
 
 #: templates/climbingCalculator.html:11 templates/raftingCalculator.html:11
 msgid "Simply enter the desired options below"
-msgstr "Jednostavno unesite željene opcije"
+msgstr ""
 
 #: templates/climbingCalculator.html:21 templates/raftingCalculator.html:21
 msgid "Number of persons"
-msgstr "Broj osoba"
+msgstr ""
 
 #: templates/climbingCalculator.html:23 templates/climbingCalculator.html:32
 #: templates/climbingCalculator.html:39 templates/raftingCalculator.html:23
 #: templates/raftingCalculator.html:32 templates/raftingCalculator.html:39
 msgid "Choose here"
-msgstr "Odaberite"
+msgstr ""
 
 #: templates/climbingCalculator.html:27
 msgid "4 (free extra ticket!)"
-msgstr "4 (jedna gratis karta!)"
+msgstr ""
 
 #: templates/climbingCalculator.html:30
 msgid "Rock type"
-msgstr "Tip stijene"
+msgstr ""
 
 #: templates/climbingCalculator.html:33 templates/raftingCalculator.html:33
 msgid "Easy one, I'm just a beginner"
-msgstr "Lagano, ipak sam samo početnik"
+msgstr ""
 
 #: templates/climbingCalculator.html:34 templates/raftingCalculator.html:34
 msgid "Moderate one, I have some experience already"
-msgstr "Srednje teško, imam već iskustva"
+msgstr ""
 
 #: templates/climbingCalculator.html:35
 msgid "Hard mode! I need an adrenaline trip!"
-msgstr "Teško! Treba mi adrenalinski trip!"
+msgstr ""
 
 #: templates/climbingCalculator.html:37
 msgid "How high do you want to go?"
-msgstr "Koliko visoko želite ići?"
+msgstr ""
 
 #: templates/climbingCalculator.html:40
 msgid "Up to 50 meters"
-msgstr "Do 50 metara"
+msgstr ""
 
 #: templates/climbingCalculator.html:41
 msgid "Between 50 and 200 meters"
-msgstr "Između 50 i 200 metara"
+msgstr ""
 
 #: templates/climbingCalculator.html:42
 msgid "All the way up top!"
-msgstr "Sve do vrha!"
+msgstr ""
 
 #: templates/climbingCalculator.html:49 templates/raftingCalculator.html:49
 msgid "I want to take a full course meal as well"
-msgstr "Želim i puni meni"
+msgstr ""
 
 #: templates/climbingCalculator.html:55 templates/raftingCalculator.html:55
 msgid "I need to rent the equipment, I don't have mine"
-msgstr "Trebam iznajmiti opremu, nemam svoju"
+msgstr ""
 
 #: templates/climbingCalculator.html:61 templates/raftingCalculator.html:61
 msgid "I want a surprise gift box!"
-msgstr "Želim poklon iznenađenja"
+msgstr ""
 
 #: templates/getstarted.html:10
 msgid "Start easily with a few tips!"
-msgstr "Počnite lagano sa ovih par savjeta"
+msgstr ""
 
 #: templates/getstarted.html:11
 msgid "Read the to-do list below to get yourself ready for the adventure."
-msgstr "Pročitajte listu kako bi se pripremili za avanturu"
+msgstr ""
 
 #: templates/getstarted.html:21
 msgid "Start early"
-msgstr "Krenite ranije"
+msgstr ""
 
 #: templates/getstarted.html:22
 msgid "Bring water"
-msgstr "Ponesite vodu"
+msgstr ""
 
 #: templates/getstarted.html:23
 msgid "Watch some videos"
-msgstr "Pogledajte neki video"
+msgstr ""
 
 #: templates/getstarted.html:24
 msgid "Something else"
-msgstr "Još nešto"
+msgstr ""
 
 #: templates/getstarted.html:29
 msgid ""
 "Make sure to start a little earlier than planned. You never know what "
 "sort of traffic issues might happen on your way to the park!"
 msgstr ""
-"Pobrinite se da krenete nešto ranije nego ste planirali. Nikad ne znate "
-"na kakve probleme u prometu možete naići na putu do parka!"
 
 #: templates/getstarted.html:30
 msgid ""
 "Water! There's never enough of it! Make sure to bring some extra bottles,"
 " especially on your mountain climbing trip, you'll dehydrate fast."
 msgstr ""
-"Voda! Nikad dosta vode! Ponesite dodatnu bocu vode, pogotovo ako idete "
-"na planinu gdje možete vrlo brzo dehidrirati"
 
 #: templates/getstarted.html:31
 msgid ""
@@ -172,41 +168,38 @@ msgid ""
 "rafting, climbing and other sort of activities. You can easily catch some"
 " good advice there as well!"
 msgstr ""
-"Možete pogledati par videa na YouTube da se upoznate sa "
-"raftingom, penjanjem po stijenama i sličnim aktivnostima. Možete lako "
-"doći do korisnih savjeta na ovaj način!"
 
 #: templates/getstarted.html:35
 msgid "Also, something else, anything really."
-msgstr "Također, još nešto, bilo što"
+msgstr ""
 
 #: templates/index.html:20
 msgid "ROCK CLIMBING IN PAKLENICA"
-msgstr "PENJANJE NA PAKLENICI"
+msgstr ""
 
 #: templates/index.html:32
 msgid "RAFTING ON ZRMANJA"
-msgstr "RAFTING NA ZRMANJI"
+msgstr ""
 
 #: templates/index.html:44
-msgid "SUBSCRIBE AND GET SUPER DEALS"
-msgstr "PRETPLATITE SE ZA SUPER AKCIJE"
+msgid "LEAVE YOUR OWN REVIEWS"
+msgstr ""
 
 #: templates/index.html:53
 msgid "Previous"
-msgstr "Prethodna"
+msgstr ""
 
 #: templates/index.html:57
 msgid "Next"
-msgstr "Sljedeca"
+msgstr ""
 
 #: templates/index.html:71
 msgid "Looking for an adventure?"
-msgstr "Tražite avanturu?"
+msgstr ""
 
 #: templates/index.html:72
 msgid "Start right here!"
-msgstr "Počnite ovdje!"
+msgstr ""
 
 #: templates/index.html:74
 msgid ""
@@ -214,140 +207,83 @@ msgid ""
 "you want here. If you need a quick tutorial to get you started, simply "
 "click here!"
 msgstr ""
-"Rafting, penjanje po stijenama, imamo sve! Pronađite bilo kakvu informaciju "
-"na lagan način upravo ovdje. Ako vam treba brzi tutorijal, jednostavno kliknite "
-"ovdje"
 
 #: templates/index.html:75
 msgid "Start the tutorial"
-msgstr "Započnite tutorijal"
+msgstr ""
 
 #: templates/paklenica.html:9
 msgid "Rock Climbing in Paklenica"
-msgstr "Penjanje na Paklenici"
+msgstr ""
 
 #: templates/paklenica.html:10
 msgid "Get ready to test your limits!"
-msgstr "Pripremite se da testirate svoje granice!"
+msgstr ""
 
 #: templates/paklenica.html:12 templates/zrmanja.html:12
 msgid "Click here to choose the type of your activity and calculate the price."
-msgstr "Kliknite ovdje za odabir aktivnosti i izračun cijene"
+msgstr ""
 
 #: templates/paklenica.html:13 templates/zrmanja.html:13
-msgid ""
-"Take the\n"
-"        activity"
-msgstr "Započni"
+msgid "Take the activity"
+msgstr ""
 
-#: templates/paklenica.html:19
+#: templates/paklenica.html:18
 msgid "User reviews of Paklenica climbing"
-msgstr "Osvrti korisnika na Paklenici"
+msgstr ""
 
-#: templates/paklenica.html:31 templates/paklenica.html:56
-#: templates/zrmanja.html:31 templates/zrmanja.html:56
+#: templates/paklenica.html:30 templates/paklenica.html:54
+#: templates/zrmanja.html:30 templates/zrmanja.html:54
 msgid "Review"
-msgstr "Osvrt"
+msgstr ""
 
-#: templates/paklenica.html:32 templates/paklenica.html:57
-#: templates/zrmanja.html:32 templates/zrmanja.html:57
+#: templates/paklenica.html:31 templates/paklenica.html:55
+#: templates/zrmanja.html:31 templates/zrmanja.html:55
 msgid "Excitement"
-msgstr "Uzbuđenje"
+msgstr ""
 
-#: templates/paklenica.html:39 templates/paklenica.html:64
-#: templates/zrmanja.html:39 templates/zrmanja.html:64
+#: templates/paklenica.html:37 templates/paklenica.html:61
+#: templates/zrmanja.html:37 templates/zrmanja.html:61
 msgid "Value"
-msgstr "Isplativnost"
-
-#: templates/paklenica.html:83 templates/zrmanja.html:83
-msgid "Want to subscribe? We'll keep you updated on any special deals"
-msgstr "Želite li se pretplatiti? Obavještavati ćemo vas o svim posebnim akcijama"
-
-#: templates/paklenica.html:94 templates/zrmanja.html:97
-msgid "General Information about the Park"
-msgstr "Opće informacije o parku"
-
-#: templates/paklenica.html:99 templates/zrmanja.html:102
-msgid "Map"
-msgstr "Karta"
-
-#: templates/paklenica.html:101 templates/zrmanja.html:104
-msgid "Weather"
-msgstr "Vrijeme"
-
-#: templates/paklenica.html:103 templates/zrmanja.html:106
-msgid "Gallery"
-msgstr "Galerija"
-
-#: templates/paklenica.html:120 templates/zrmanja.html:123
-msgid "Temperature"
-msgstr "Temperatura"
-
-#: templates/paklenica.html:132 templates/zrmanja.html:135
-msgid "Humidity"
-msgstr "Vlaga"
-
-#: templates/paklenica.html:134 templates/zrmanja.html:137
-msgid "Pressure"
-msgstr "Tlak zraka"
-
-#: templates/paklenica.html:143 templates/zrmanja.html:146
-msgid "Sky"
-msgstr "Oblaci"
-
-#: templates/paklenica.html:145 templates/zrmanja.html:148
-msgid "Wind"
-msgstr "Vjetar"
+msgstr ""
 
 #: templates/raftingCalculator.html:27
 msgid "free extra ticket"
-msgstr "gratis karta"
+msgstr ""
 
 #: templates/raftingCalculator.html:30
 msgid "Route type"
-msgstr "Tip rute"
+msgstr ""
 
 #: templates/raftingCalculator.html:35
 msgid "Hard mode! I need an adrenaline trip"
-msgstr "Teško! Treba mi adrenalinski trip"
+msgstr ""
 
 #: templates/raftingCalculator.html:37
 msgid "Duration of your adventure"
-msgstr "Trajanje avanture"
+msgstr ""
 
 #: templates/raftingCalculator.html:40
 msgid "Up to 1 hour"
-msgstr "Do 1 sata"
+msgstr ""
 
 #: templates/raftingCalculator.html:41
 msgid "Between 1 and 2 hours"
-msgstr "Između 1 i 2 sata"
+msgstr ""
 
 #: templates/raftingCalculator.html:42
 msgid "The entire afternoon!"
-msgstr "Cijelo popodne!"
-
-#: templates/subscribe.html:8
-msgid "Subscribe to our newsletter"
-msgstr "Pretplatite se na naše vijesti"
-
-#: templates/subscribe.html:10
-msgid ""
-"By subscribing, you will get the best deals and special events! We'll "
-"send you coupons every time there's a special discount!"
 msgstr ""
-"Ako se pretplatite dobiti ćete najbolje akcije i popuste za avanturističke evente! "
-"Poslati ćemo vam kupon svaki put kad se pojavi akcija!"
 
 #: templates/zrmanja.html:9
 msgid "Rafting on Zrmanja"
-msgstr "Rafting na Zrmanji"
+msgstr ""
 
 #: templates/zrmanja.html:10
 msgid "Experience a wild ride through river rapids!"
-msgstr "Isprobajte napetu vožnju po rječnim brzacima!"
+msgstr ""
 
-#: templates/zrmanja.html:19
+#: templates/zrmanja.html:18
 msgid "User reviews of Zrmanja rafting"
-msgstr "Osvrti korisnika na rafting na Zrmanji"
+msgstr ""
 

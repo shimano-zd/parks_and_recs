@@ -55,7 +55,45 @@
         "comment" : "Stankovicu, kad sam ja zaveslao niz tu rijeku, nabujalu, podivljalu, pomislio sam to je to. Stankovicu, nebo se spojilo sa zemljom, ovako nesto se dogodi samo jednom u zivotu.",
         "excitement" : 100,
         "price" : 100
+    },
+    {
+        "id" : 9,
+        "name" : "Matea Kovacevic",
+        "comment" : "This was fun! I had an issue with my oar, it got stuck to its holder and we couldn't get it out. I kept hitting people with it accidentally and I think I even hit Toni Cetinski",
+        "excitement" : 90,
+        "price" : 70
+    },
+    {
+        "id" : 10,
+        "name" : "Sime Martinov",
+        "comment" : "Bilo je dobro, svida mi se ova aktivnost. Na Paklenici sam poginuo, ali Zrmanja je odlicna. Pohvale restoranu, imaju maestralne cevape.",
+        "excitement" : 85,
+        "price" : 80
+    },
+    {
+        "id" : 11,
+        "name" : "Ivica Kustura",
+        "comment" : "Rafting je bio po mojoj mjeri. Uzeo sam kratku rutu od samo sat vremena tako da sam imao dovoljno vremena za hranu prije i poslije voznje.",
+        "excitement" : 80,
+        "price" : 80
+    },
+    {
+        "id" : 12,
+        "name" : "Ana Strenja",
+        "comment" : "Nisam bas zadovoljna raftingom, mislim da je bio problem u instruktoru, nije me dobro privezao sigurnosnim konopom, tako da sam na pola rute upala u rijeku. Srecom, uspjela sam isplivati negdje oko Maslenickog mosta.",
+        "excitement" : 30,
+        "price" : 40
+    },
+    {
+        "id" : 13,
+        "name" : "Ivan Grzan",
+        "comment" : "Nakon 3 minute mi je veslo ispalo iz ruke, onda san popizdija i bacija i pomocno veslo isto, nisam ima zivaca za to. Fala bog, restoran je dobar, satra san 12 peciva sa hrenovkom",
+        "excitement" : 50,
+        "price" : 85
     }
+
+
+
     
 
 ]

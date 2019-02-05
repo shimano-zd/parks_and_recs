@@ -1,30 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
-<<<<<<< HEAD
-.naslovnaMainContainer{
-  margin-top: 5%;
-=======
-
-.titleLogo_container_title {
+a{
+  text-decoration: none !important;
+}
+.indexBanner {
   width: 100%;
->>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
+  height: 300px;
+
+}
+.carousel-caption{
+  display: flex !important;
+  justify-content: center !important;
+}
+.carouselFontBackground {
+  width: 100%;
+  background: rgba(233, 236, 239, 0.5);
+  border-radius: 5px;
+  max-width: 960px;
+  justify-self: center;
+  padding: 10px;
+}
+
+
+.footer {
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: rgb(141, 141, 141);
+  width: 100%;
+  background-color: white;
+
+}
+
+.adviceListWrapper {
+  width: 80%;
+  padding: 30px;
+  justify-self: center;
+  margin-bottom: 10%;
+
+}
+
+.naslovnaMainContainer {
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
 }
-.naslovnaNaslov{
+
+.naslovnaNaslov {
   text-align: center;
   color: #eee;
 }
-.naslovnaCarousel{
-  width:60%;
-  margin-top: 50px;
+
+.naslovnaCarousel {
+  width: 100%;
+
 }
 
-.commentsSection{
+.commentsSection {
   display: flex;
   margin-bottom: 50px;
   width: 100%;
@@ -32,22 +70,25 @@
   flex-direction: column;
 
 }
-.card-body{
+
+.card-body {
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
 
 
 }
-.marks{
+
+.marks {
   justify-self: flex-end;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.userExperience{
-  
+
+.userExperience {
+
   background: #e9ecef;
   border-radius: 10px;
   padding: 30px;
@@ -58,61 +99,95 @@
   grid-template-areas: "columnLeft columnRight";
 }
 
-.columnLeft{
+.card-img-top {
+  max-width: 240px !important;
+  height: auto !important;
+  margin: auto !important;
+  padding: 10px !important;
+}
+
+.columnLeft {
   grid-area: columnLeft;
   display: flex;
   justify-content: center;
+  width: 90%;
 }
-.columnRight{
+
+.columnRight {
   grid-area: columnRight;
   display: flex;
   justify-content: center;
+  width: 90%;
 }
-.review{
+
+.review {
   color: rgb(9, 84, 182);
-  font-size:20px;
+  font-size: 20px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
-.calcMainWrapper{
+.calcMainWrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20%;
 }
-.calcContainer{
+
+.calcContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "calcLeft calcRight";
 
   width: 60%;
-  
+
 }
 
-.calcLeft{
+.parkInformationWrapper {
+  margin-bottom: 10%;
+  height: 900px;
+}
+
+.jumbotronMap {
+  height: 900px !important;
+}
+
+.frameMap {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-pane {
+  height: 600px !important;
+}
+
+.calcLeft {
   grid-area: calcLeft;
 
 }
 
-.calcRight{
+.calcRight {
   grid-area: calcRight;
 }
-.form-control{
+
+.form-control {
   margin-bottom: 10px !important;
 }
 
-.form-check{
+.form-check {
   margin-bottom: 10px !important;
 }
-.calcRight{
+
+.calcRight {
   display: flex;
   justify-content: center;
 
 }
-.calcDisplay{
+
+.calcDisplay {
   margin-top: 10%;
   margin-left: 10%;
   width: 80%;
@@ -122,5 +197,112 @@
   padding: 20px;
 }
 
+.weatherGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "weatherGridTemp weatherGridRain weatherGridClouds"
+
+}
+
+.weatherCard {
+
+  width: 90% !important;
+  padding: 10px !important;
+  display: flex;
+  flex-direction: column;
+  margin: 10px !important;
+
+}
+
+.weatherGridTemp {
+  grid-area: weatherGridTemp;
+}
+
+.weatherGridRain {
+  grid-area: weatherGridRain;
+}
+
+.weatherGridClouds {
+  grid-area: weatherGridClouds;
+}
+
+.weatherLabel {
+  color: #aaa;
+
+}
+
+.weatherInfo {
+  color: rgb(9, 84, 182);
+  font-size: 25px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "topLeft topCenter topRight""bottomLeft bottomCenter bottomRight";
+
+}
+
+.bottomLeft {
+  grid-area: bottomLeft;
+}
+
+.bottomCenter {
+  grid-area: bottomCenter;
+}
+
+.bottomRight {
+  grid-area: bottomRight;
+}
+
+.topLeft {
+  grid-area: topLeft;
+}
+
+.topCenter {
+  grid-area: topCenter;
+}
+
+.topRight {
+  
+}
+.modal-content{
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.modal-dialog-centered{
+  transform: translate(-100%) !important;
+}
+.userComment{
+  margin-top: 40px;
+
+  width: 100%;
+  height: 140px;
+  background-color: #e9ecef;
+
+}
+.userCommentText{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.userCommentButton{
+  display: flex;
+  justify-content: center;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 300px;
+
+}
+#name, #email{
+  margin-bottom: 20px;
+}
 
 

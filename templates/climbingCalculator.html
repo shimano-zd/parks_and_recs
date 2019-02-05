@@ -4,7 +4,7 @@
 
 
 <div class="parkBanner">
-    <img src="../static/images/zrmanja_banner.jpg" alt="" style="width: 100%; height: auto;">
+    <img src="../static/images/paklenica_banner.jpg" alt="" style="width: 100%; height: auto;">
 </div>
 <div class="jumbotron">
     <h1 class="display-4">{% trans %}Calculate all your needs!{% endtrans %}</h1>
@@ -18,47 +18,47 @@
         <div class="calcLeft">
             <h1 style="color: rgb(9, 84, 182);"></h1>
             <br>
-            <h5 style="padding: 10px">{% trans %}Number of persons{% endtrans %}</h5>
+            <h5 style="padding: 10px">{%trans%}Number of persons{%endtrans%}</h5>
             <select class="form-control" id="selectPersons">
-                <option value="0" selected disabled hidden>{% trans %}Choose here{% endtrans %}</option>
+                <option value="0" selected disabled hidden>{%trans%}Choose here{%endtrans%}</option>
                 <option value="100">1</option>
                 <option value="180">2</option>
                 <option value="240">3</option>
-                <option value="300">4 ({% trans %}free extra ticket{% endtrans %}!)</option>
+                <option value="300">{%trans%}4 (free extra ticket!){%endtrans%}</option>
 
             </select>
-            <h5 style="padding: 10px">{% trans %}Route type{% endtrans %}</h5>
+            <h5 style="padding: 10px">{%trans%}Rock type{%endtrans%}</h5>
             <select class="form-control" id="selectRoute">
-                <option value="0" selected disabled hidden>{% trans %}Choose here{% endtrans %}</option>
-                <option value="20">{% trans %}Easy one, I'm just a beginner{% endtrans %}</option>
-                <option value="40">{% trans %}Moderate one, I have some experience already{% endtrans %}!</option>
-                <option value="60">{% trans %}Hard mode! I need an adrenaline trip{% endtrans %}!</option>
+                <option value="0" selected disabled hidden>{%trans%}Choose here{%endtrans%}</option>
+                <option value="20">{%trans%}Easy one, I'm just a beginner{%endtrans%}</option>
+                <option value="40">{%trans%}Moderate one, I have some experience already{%endtrans%}</option>
+                <option value="60">{%trans%}Hard mode! I need an adrenaline trip!{%endtrans%}</option>
             </select>
-            <h5 style="padding: 10px">{% trans %}Duration of your adventure{% endtrans %}</h5>
+            <h5 style="padding: 10px">{%trans%}How high do you want to go?{%endtrans%}</h5>
             <select class="form-control" id="selectDuration">
-                <option value="0" selected disabled hidden>{% trans %}Choose here{% endtrans %}</option>
-                <option value="20">{% trans %}Up to 1 hour{% endtrans %}</option>
-                <option value="30">{% trans %}Between 1 and 2 hours{% endtrans %}</option>
-                <option value="50">{% trans %}The entire afternoon!{% endtrans %}</option>
+                <option value="0" selected disabled hidden>{%trans%}Choose here{%endtrans%}</option>
+                <option value="20">{%trans%}Up to 50 meters{%endtrans%}</option>
+                <option value="30">{%trans%}Between 50 and 200 meters{%endtrans%}</option>
+                <option value="50">{%trans%}All the way up top!{%endtrans%}</option>
             </select>
             <br>
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="checkBoxMeal" onclick="mealBoxChanged()">
                 <label class="form-check-label" for="defaultCheck1">
-                    {% trans %}I want to take a full course meal as well{% endtrans %}
+                    {%trans%}I want to take a full course meal as well{%endtrans%}
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="checkBoxEquipment" onclick="equipmentBoxChanged()">
                 <label class="form-check-label" for="defaultCheck2">
-                    {% trans %}I need to rent the equipment, I don't have mine{% endtrans %}
+                    {%trans%}I need to rent the equipment, I don't have mine{%endtrans%}
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="checkBoxGift" onclick="giftBoxChanged()">
                 <label class="form-check-label" for="defaultCheck3">
-                    {% trans %}I want a surprise gift box!{% endtrans %}
+                    {%trans%}I want a surprise gift box!{%endtrans%}
                 </label>
             </div>
         </div>

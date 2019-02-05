@@ -4,14 +4,16 @@
 
 {% block content %}
 
-<div class="error" style=" width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 20%;">
-    <div class="message">
-        <h1 style="font-family: Permanent Marker; color: rgb(247, 200, 72)">{% trans %}Imamo problema na serveru :({% endtrans %}</h1>
-    </div>
+<div class="errorMessage">
+
+    <div class="jumbotron">
+        <h1 class="display-4">{% trans %}Oops!{% endtrans %}</h1>
+        <p class="lead">{% trans %}There has been a problem{% endtrans %} :(</p>
+        <hr class="my-4">
+        <p>{% trans %}Our server is having difficulties finding that information{% endtrans %}</p>
+        
+      </div>
+
 </div>
 
 {% endblock %}

@@ -1,0 +1,68 @@
+[
+
+    {
+        "id" : 1,
+        "name" : "Steven Quebek",
+        "comment" : "Holy cow, this was thrilling! It was very difficult, but super rewarding! My mother-in-law fell down the ravine and we haven't heard from here since.",
+        "excitement" : 100,
+        "price" : 50
+    },
+    {
+        "id" : 2,
+        "name" : "Ivana Kindl",
+        "comment" : "Well, compared to Zrmanja rafting, this was a pleasant surprise. Jacques couldn't really climb, so it was just me this time, and it was great. I climbed, like, 200m up top and the view was fascinating.",
+        "excitement" : 90,
+        "price" : 80
+    },
+    {
+        "id" : 3,
+        "name" : "Pamela Anderson",
+        "comment" : "I wasn't very happy with the instructor, she didn't really pay any attention to me. Although, the view is nice once you get to the top of the rock.",
+        "excitement" : 50,
+        "price" : 70
+    },
+    {
+        "id" : 4,
+        "name" : "Susan Green",
+        "comment" : "I went to this park with my Christian friends and we had a fairly good time. I had my praying beads with me all the time, just in case I fall down. Luckily, that didn't happen.",
+        "excitement" : 80,
+        "price" : 80
+    },
+    {
+        "id" : 5,
+        "name" : "Toni Cetinski",
+        "comment" : "I'm not very fond of heights, so I was nauseous all the time and almost started to vomit half-way to the top. I guess it's just me, but I like Zrmanja better.",
+        "excitement" : 50,
+        "price" : 90
+    },
+    {
+        "id" : 6,
+        "name" : "Bob Rosemary",
+        "comment" : "Ugh, I didn't like this. I nearly slipped and fell down the ravine, my instructor forgot to fasten my belt! Jesus Christ, I'm lucky I survived. Do NOT go here, these people will kill you accidentally!",
+        "excitement" : 10,
+        "price" : 10
+    },
+    {
+        "id" : 7,
+        "name" : "Joey Diaz",
+        "comment" : "Let me tell you something, Joe Rogan. This was tremendous. I had such an exciting time, I stood up at the top of the mountain and yelled like that time I was overdosed on cocaine back in '87 on West Boulevard",
+        "excitement" : 100,
+        "price" : 100
+    },
+    {
+        "id" : 8,
+        "name" : "Mate Miso Kovac",
+        "comment" : "Stankovicu, kad sam se ja uspeo uz tu stijenu, cvrstu, pradavnu, pomislio sam to je to. Stankovicu, nebo se spojilo sa zemljom, ovako nesto se dogodi samo jednom u zivotu.",
+        "excitement" : 100,
+        "price" : 100
+    },
+    {
+        "id" : 9,
+        "name" : "Matea Kovacevic",
+        "comment" : "I'm a regular visitor here, I love the outdoors and the climb is exhausting but rewarding. Unfortunately, the guest house didn't have any cevap dish, and I was really looking forward to it...",
+        "excitement" : 80,
+        "price" : 70
+    }
+    
+
+]

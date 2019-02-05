@@ -2,7 +2,42 @@
 
 	{% block content %}
 	
+	<div class="parkBanner">
+		<img src="../static/images/start-banner.jpg" alt="" style="width: 100%; height: auto;">
+	</div>
 
+	<div class="jumbotron">
+		<h1 class="display-4">{% trans %}Start easily with a few tips!{% endtrans %}</h1>
+		<p class="lead">{% trans %}Read the to-do list below to get yourself ready for the adventure.{% endtrans %}</p>
+		<hr class="my-4">
+		
+	  </div>
+
+	  <div class="adviceListWrapper">
+
+		<div class="row">
+			<div class="col-4">
+			  <div class="list-group" id="list-tab" role="tablist">
+				<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">{% trans %}Start early{% endtrans %}</a>
+				<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">{% trans %}Bring water{% endtrans %}</a>
+				<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">{% trans %}Watch some videos{% endtrans %}</a>
+				<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">{% trans %}Something else{% endtrans %}</a>
+			  </div>
+			</div>
+			<div class="col-8">
+			  <div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">{% trans %}Make sure to start a little earlier than planned. You never know what sort of traffic issues might happen on your way to the park!{% endtrans %}</div>
+				<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">{% trans %}Water! There's never enough of it! Make sure to bring some extra bottles, especially on your mountain climbing trip, you'll dehydrate fast.{% endtrans %}</div>
+				<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">{% trans %}You can watch some videos on YouTube to get yourself familiar with rafting, climbing and other sort of activities. You can easily catch some good advice there as well!{% endtrans %} <br>
+					<br>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/FCUJrXSKWrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">{% trans %}Also, something else, anything really.{% endtrans %}</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
 
 
 	{% endblock %}

@@ -6,16 +6,17 @@
     <img src="../static/images/zrmanja_banner.jpg" alt="" style="width: 100%; height: auto;">
 </div>
 <div class="jumbotron">
-    <h1 class="display-4">Rafting on Zrmanja</h1>
-    <p class="lead">Experience a wild ride through river rapids!</p>
+    <h1 class="display-4">{% trans %}Rafting on Zrmanja{% endtrans %}</h1>
+    <p class="lead">{% trans %}Experience a wild ride through river rapids!{% endtrans %}</p>
     <hr class="my-4">
-    <p>Click here to choose the type of your activity and calculate the price.</p>
-    <a class="btn btn-primary btn-lg" href="{{ url_for('raftingCalculator')}}" role="button">Take the activity</a>
+    <p>{% trans %}Click here to choose the type of your activity and calculate the price.{% endtrans %}</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('raftingCalculator')}}" role="button">{% trans %}Take the
+        activity{% endtrans %}</a>
 </div>
 
 <div class="commentsSection">
     <div class="userExperienceTitle">
-        <h1 class="display-4">User reviews of Zrmanja rafting</h1>
+        <h1 class="display-4">{% trans %}User reviews of Zrmanja rafting{% endtrans %}</h1>
     </div>
     <div class="userExperience">
 
@@ -27,14 +28,15 @@
                     <h5 class="card-title">{{ user1.name }}</h5>
                     <p class="card-text">{{ user1.comment }}</p>
                     <div class="marks">
-                        <div class="review">Review:</div>
-                        Excitement: <div class="hidden" id="fillBarRightTopNum">{{ user1.excitement}}</div>
+                        <div class="review">{% trans %}Review{% endtrans %}:</div>
+                        {% trans %}Excitement{% endtrans %}: <div class="hidden" id="fillBarRightTopNum">{{
+                            user1.excitement}}</div>
                         <div class="progress">
                             <div class="progress-bar bg-success" id="fillBarRightTop" role="progressbar" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-                        Value: <div class="hidden" id="fillBarRightBottomNum">{{ user1.price}}</div>
+                        {% trans %}Value{% endtrans %}: <div class="hidden" id="fillBarRightBottomNum">{{ user1.price}}</div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" id="fillBarRightBottom" role="progressbar" style="width: 50%"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -51,14 +53,15 @@
                     <h5 class="card-title">{{ user2.name}}</h5>
                     <p class="card-text">{{ user2.comment}}</p>
                     <div class="marks">
-                        <div class="review">Review:</div>
-                        Excitement: <div class="hidden" id="fillBarLeftTopNum">{{ user2.excitement}}</div>
+                        <div class="review">{% trans %}Review{% endtrans %}:</div>
+                        {% trans %}Excitement{% endtrans %}: <div class="hidden" id="fillBarLeftTopNum">{{
+                            user2.excitement}}</div>
                         <div class="progress">
                             <div class="progress-bar bg-success" id="fillBarLeftTop" role="progressbar" style="width: 20%"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
-                        Value: <div class="hidden" id="fillBarLeftBottomNum">{{ user2.price}}</div>
+                        {% trans %}Value{% endtrans %}: <div class="hidden" id="fillBarLeftBottomNum">{{ user2.price}}</div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" id="fillBarLeftBottom" role="progressbar" style="width: 70%"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -75,12 +78,214 @@
 
 
     </div>
+    <div class="userComment">
+        <div class="userCommentText">
+            <h5>{% trans %}Want to subscribe? We'll keep you updated on any special deals{% endtrans%}</h5>
+        </div>
+        <div class="userCommentButton">
 
+                <a href="{{ url_for('subscribe')}}"><button type="button" class="btn btn-primary btn-lg">{% trans %}Subscribe{% endtrans%}</button></a>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="parkInformationWrapper">
+    <div class="jumbotron jumbotronMap">
+        <h1 class="display-4">{% trans %}General Information about the Park{% endtrans %}</h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">{% trans %}Map{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+                        role="tab" aria-controls="profile">{% trans %}Weather{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
+                        role="tab" aria-controls="messages">{% trans %}Gallery{% endtrans %}</a>
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <iframe class="frameMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366379.46928099723!2d15.571072640938397!3d44.15885950344926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761c9dbc47651ff%3A0x9d94f893194bf048!2sZrmanja!5e0!3m2!1sen!2shr!4v1549357160829" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                        <div class="weatherGrid">
+
+                            <div class="weatherGridTemp"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_temp.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text weatherLabel">{% trans %}Temperature{% endtrans %}:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp}}°C</p>
+                                    <p class="card-text weatherLabel">Minimum:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp_min}}°C</p>
+                                    <p class="card-text weatherLabel">Maximum:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp_max}}°C</p>
+                                </div>
+                            </div>
+                            <div class="weatherGridRain"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_rain.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text weatherLabel">{% trans %}Humidity{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.main.humidity}}%</p>
+                                    <p class="card-text weatherLabel">{% trans %}Rain past 3 hours{% endtrans %}: </p>
+
+                                    <p class="weatherInfo">Sorry, the API is broken :(</p>
+                                </div>
+                            </div>
+                            <div class="weatherGridClouds"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_sky.jpg" class="card-img-top" alt="...">
+                                <div class="card-body weatherLabel">
+                                    <p class="card-text weatherLabel">{% trans %}Sky{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.weather[0].description}}</p>
+                                    <p class="card-text weatherLabel">{% trans %}Wind{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.wind.speed}}&nbsp;km/h</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+
+                        <div class="galleryGrid">
+
+                            <div class="topLeft">
+
+                                <img src="../static/images/zrmanja_gallery_blueboat.jpg" data-toggle="modal"
+                                    data-target="#exampleModalCenter1" style="width:80%;height:auto;cursor: pointer;"
+                                    alt="">
+
+                                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_blueboat.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="topCenter">
+                                <img src="../static/images/zrmanja_gallery_canyon.jpg" data-toggle="modal" data-target="#exampleModalCenter2"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_canyon.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="topRight">
+
+                                <img src="../static/images/zrmanja_gallery_rowing.jpg" data-toggle="modal" data-target="#exampleModalCenter3"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_rowing.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomLeft">
+                                <img src="../static/images/zrmanja_gallery_splash.jpg" data-toggle="modal" data-target="#exampleModalCenter4"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_splash.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomCenter">
+                                <img src="../static/images/zrmanja_gallery_waterfall.jpg" data-toggle="modal"
+                                    data-target="#exampleModalCenter5" style="width:80%;height:auto;cursor: pointer;"
+                                    alt="">
+
+                                <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_waterfall.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomRight">
+                                <img src="../static/images/zrmanja_gallery_food.jpg" data-toggle="modal"
+                                    data-target="#exampleModalCenter6" style="width:80%;height:auto;cursor: pointer;"
+                                    alt="">
+
+                                <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/zrmanja_gallery_food.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </div>
 
 <script>
-    
     function fillElements() {
         let elements = document.getElementsByClassName("progress-bar");
 
@@ -114,15 +319,16 @@
         rightPicture.src = "../static/images/" + username + ".jpg";
     }
 
-    function fillPercent(barID, num){
+    function fillPercent(barID, num) {
 
         let width = 1;
         let id = setInterval(frame, 2);
         let elem = document.getElementById(barID)
 
         function frame() {
-            (width >= num) ? clearInterval(id) : width++; elem.style.width = width + '%'
-            
+            (width >= num) ? clearInterval(id): width++;
+            elem.style.width = width + '%'
+
         }
 
     }

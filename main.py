@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, session
 import requests
-<<<<<<< HEAD
 from flask_babel import Babel
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField
+from wtforms.validators import InputRequired, Length, Email
 import json
 import random
 
@@ -12,23 +14,24 @@ app.secret_key = 'secret_key'
 
 #prijevod
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
-=======
-from flask_bootstrap import Bootstrap
-from flask_babel import Babel
 
-app = Flask(__name__)
-app.debug = True
-bootstrap = Bootstrap(app)
-app.secret_key = 'NEKA_ŽVRLJOTINA'
-
-app.config['BABEL_DEFAULT_LOCALE'] = 'hr'
->>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
 babel = Babel(app)
 
+class LoginForm(FlaskForm):
+    name = StringField('name', validators=[InputRequired(), Length(min=3, message="Please enter at least 3 characters")])
+    email = StringField('email', validators=[InputRequired(), Email("This field requires a valid email address")])
+    
 
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
+@app.route("/subscribe", methods=['GET','POST'])
+def subscribe():
+    form = LoginForm()
+    if form.validate_on_submit():
+        return render_template("subscribe.html", form = form, message='Great, check your email!')
+    return render_template("subscribe.html", form=form)
 
 @app.route("/index")
 def index():
@@ -40,8 +43,29 @@ def getstarted():
 
 @app.route("/zrmanja")
 def zrmanja():
-    jsonUserReviewZrmanja = open('./users/users.json').read()
+    jsonUserReviewZrmanja = open('./users/usersZrmanja.json').read()
     data = json.loads(jsonUserReviewZrmanja)
+
+    user1 = getRandomPeople(data)[0]
+    user2 = getRandomPeople(data)[1]
+    
+    # 3194245 je Obrovac
+    return render_template("zrmanja.html", jsonWeather=getWeather(3194245), user1=user1, user2=user2)
+
+@app.route("/paklenica")
+def paklenica():
+
+    jsonUserReviewPaklenica = open('./users/usersPaklenica.json').read()
+    data = json.loads(jsonUserReviewPaklenica)
+
+    user1 = getRandomPeople(data)[0]
+    user2 = getRandomPeople(data)[1]
+
+    # 3189964 je Starigrad
+
+    return render_template("paklenica.html", jsonWeather=getWeather(3189964), user1=user1, user2=user2)
+
+def getRandomPeople(data):
 
     numberOfPeople = len(data)
     listOfNumbers = list()
@@ -55,17 +79,16 @@ def zrmanja():
 
     randomPerson1 = data[listOfNumbers[0]]
     randomPerson2 = data[listOfNumbers[1]]
+    randomPersonTuple = [randomPerson1, randomPerson2]
 
-    return render_template("zrmanja.html", jsonWeather=getWeather(3188691), user1=randomPerson1, user2=randomPerson2)
+    return randomPersonTuple
 
-@app.route("/paklenica")
-def paklenica():
-    return render_template("paklenica.html", jsonWeather=getWeather(3202104))
-    
 @app.route("/raftingCalculator")
 def raftingCalculator():
     return render_template("raftingCalculator.html")
-
+@app.route("/climbingCalculator")
+def climbingCalculator():
+    return render_template("climbingCalculator.html")
 
 @app.route("/smjestaj")
 def smjestaj():
@@ -100,11 +123,7 @@ def getWeather(id):
     
     return jsonWeather
 
-@babel.localeselector
-def get_locale():
-    if request.args.get('lang'):
-        session['lang'] = request.args.get('lang')
-    return session.get('lang', 'en')
+
 
 if __name__ == "__main__":
     app.run()

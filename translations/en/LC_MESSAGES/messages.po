@@ -7,13 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2019-02-02 14:38+0100\n"
-"PO-Revision-Date: 2019-02-02 14:39+0100\n"
-=======
-"POT-Creation-Date: 2019-01-30 19:01+0100\n"
-"PO-Revision-Date: 2019-01-30 18:31+0100\n"
->>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
+"POT-Creation-Date: 2019-02-04 13:35+0100\n"
+"PO-Revision-Date: 2019-02-04 13:36+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -23,336 +18,272 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-<<<<<<< HEAD
-#: templates/base.html:15
+
+
+#: templates/404.html:10 templates/500.html:10
+msgid "Oops!"
+msgstr ""
+
+#: templates/404.html:11
+msgid "There is no such page"
+msgstr ""
+
+#: templates/404.html:13
+msgid "Maybe you misspelled something?"
+msgstr ""
+
+#: templates/500.html:11
+msgid "There has been a problem"
+msgstr ""
+
+#: templates/500.html:13
+msgid "Our server is having difficulties finding that information"
+msgstr ""
+
+#: templates/base.html:16
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:23
+#: templates/base.html:30
 msgid "Get Started"
 msgstr ""
 
-#: templates/base.html:28
+#: templates/base.html:35
 msgid "Parks and Activities"
 msgstr ""
 
-#: templates/base.html:34
+#: templates/base.html:41
 msgid "General advice"
 msgstr ""
 
-#: templates/base.html:41
+#: templates/base.html:48
 msgid "Search"
 msgstr ""
 
-=======
-#: templates/404.html:13
-msgid "Ups, ta stranica ne postoji :("
-msgstr "Oops, that page doesn't exist :("
-
-#: templates/500.html:13
-msgid "Imamo problema na serveru :("
-msgstr "We ran into some server problems :("
-
-#: templates/base.html:15
-msgid "Izbornik"
-msgstr "Menu"
-
-#: templates/base.html:23
-msgid "Naslovna stranica "
-msgstr "Home Page"
-
-#: templates/base.html:28
-msgid "Parkovi"
-msgstr "Parks"
-
-#: templates/base.html:31 templates/index.html:45
-msgid "Plitvička jezera"
-msgstr "Plitvice Lakes"
-
-#: templates/base.html:39
-msgid "Smještaj"
-msgstr "Accomodation"
-
-#: templates/base.html:44
-msgid "Vanjski linkovi"
-msgstr "External Links"
-
-#: templates/base.html:47
-msgid "Planinarski dom Paklenica"
-msgstr "Mountain hut Paklenica"
-
-#: templates/base.html:48
-msgid "Hrvatski planinarski savez"
-msgstr "Croatian Mountaineering Association"
-
-#: templates/base.html:49
-msgid "Državni hidrometeorološki zavod"
-msgstr "Croatian Meteorological and Hydrological Service"
-
-#: templates/base.html:53
-msgid "Novosti"
-msgstr "News"
-
-#: templates/base.html:65
-msgid "Pretraga"
-msgstr "Search"
-
-#: templates/index.html:28
-msgid "Trebate izlet?"
-msgstr "Need a trip?"
-
-#: templates/index.html:47
-msgid "16 jezera najstarijeg nacionalnog parka u Hrvatskoj"
-msgstr "16 lakes of the oldest national park in Croatia"
-
-#: templates/index.html:56
-msgid "Gladni risovi će vas pojesti naživo"
-msgstr "Hungry lynx will eat you alive"
-
-#: templates/index.html:65
-msgid "Strme stijene i prostrani horizont"
-msgstr "Steep rocks and wide horizons"
-
-#: templates/paklenica.html:17
-msgid "Zašto Paklenica?"
-msgstr "Why Paklenica?"
-
-#: templates/paklenica.html:19
-msgid ""
-"Zbog svoje jedinstvene prirodne osnove, izuzetnih geomorfoloških oblika i"
-" veličanstvenih šuma, prostor Velike i\n"
-"\t\t\t\t\tMale Paklenice već je 1949. g. proglašen nacionalnim parkom. "
-"Osnovni razlog proglašenja ovog prostora nacionalnim\n"
-"\t\t\t\t\tparkom bila je zaštita najočuvanijeg i najvećeg šumskog "
-"kompleksa na području Dalmacije."
-msgstr "Due to its unique natural base, exceptional geomorphological forms and magnificent forests, the Great
-Male Paklenica was declared a national park in 1949. The main reason for proclaiming this space nationally
-the park was the protection of the most watched and largest forest complex in Dalmatia."
-
-#: templates/paklenica.html:26
-msgid ""
-"Nacionalni park Paklenica se prostire na površini od 95 km², na južnim "
-"obroncima Velebita, ispod najviših vrhova\n"
-"\t\t\t\t\tVaganskog vrha (1757m) i Svetog brda (1753 m). Obuhvaća "
-"područje bujičnih tokova Velike i Male Paklenice, odnosno\n"
-"\t\t\t\t\tnjihove prepoznatljive kanjone okomito urezane u južne padine "
-"Velebita, te širi okolni prostor. Na relativno malom\n"
-"\t\t\t\t\tpodručju susreće se iznimno bogatstvo geomorfoloških pojava i "
-"oblika, raznolik biljni i životinjski svijet,\n"
-"\t\t\t\t\tatraktivni krajolici i netaknuta priroda. Raznolikost živog "
-"svijeta je uvjetovana klimatskim karakteristikama ali\n"
-"\t\t\t\t\ti bogatom i raznolikom geološkom prošlosti."
-msgstr "Paklenica National Park extends over 95 km², on the southern slopes of Velebit, below the highest peaks
-Vaganski vrh (1757m) and Sveti Hram (1753 m). It covers the area of ​​the torrent flows of Velika and Male Paklenica respectively
-their recognizable canyons are vertically engraved in the southern slopes of Velebit, and the wider surrounding area. On a relatively small one
-the area meets the immense richness of geomorphologic phenomena and forms, a diverse plant and animal world,
-attractive landscapes and untouched nature. The diversity of the living world is conditioned by climatic characteristics but
-and a rich and diverse geological past."
-
-#: templates/paklenica.html:37
-msgid "Manita Peć"
-msgstr "Manita Cave"
-
-#: templates/paklenica.html:39
-msgid ""
-"Manita peć je jedina špilja na prostoru Parka koja je otvorena i uređena "
-"za posjet. Svojom prostranošću i\n"
-"\t\t\t\t\tljepotom ukrasa oduševljava posjetitelje još od davne 1937. "
-"godine, kada je nakon uređenja staze započelo njeno\n"
-"\t\t\t\t\tposjećivanje. Ulaz u špilju nalazi se na 570 m nadmorske "
-"visine, a uspon od parkirališta u Velikoj Paklenici do\n"
-"\t\t\t\t\tnje traje oko sat i pol.\n"
-"\n"
-"\t\t\t\t\tŠpilja obiluje špiljskim ukrasima ili sigama. Oni se razlikuju "
-"prema obliku i načinu postanka. Najčešći tipovi\n"
-"\t\t\t\t\tsiga koje možete vidjeti u Manitoj peći su stalagmiti, "
-"stalaktiti, sigasti stupovi (stalagnati) i špiljske\n"
-"\t\t\t\t\tkamenice (kaskade). Neki od tih ukrasa dobili su imena po "
-"svojim zanimljivim oblicima, primjerice kaciga, orgulje\n"
-"\t\t\t\t\ti vještica."
-msgstr "
-The Manita Cave is the only cave in the park area that is open and decorated for a visit. With its spaciousness and
-the beauty of the decoration has been delighting visitors since 1937, when after the arrangement of the trail began its
-visiting. The entrance to the cave is 570 m above sea level and the climb from the parking lot in Velika Paklenica to
-a period of about an hour and a half.
-
-The cave is abundant with cave decorations or cave. They differ according to the form and manner of birth. The most common types
-the siga you can see in the Manitoba furnace are stalagmites, stalactites, safety columns (stalagata) and caves
-oysters (cascades). Some of these ornaments get names by their interesting forms, such as helmets, oranges
-and the witch."
-
-#: templates/paklenica.html:51
-msgid ""
-"Ukoliko se odlučite posjetiti Manitu peć, u njoj ćete provesti oko 30 "
-"minuta u pratnji vodiča i upoznati mnoge\n"
-"\t\t\t\t\ttajne tog zanimljivog podzemnog svijeta. Temperatura u špilji "
-"cijele godine kreće se oko 9°C, pa vam preporučujemo\n"
-"\t\t\t\t\tda u toplijem dijelu godine ponesete odgovarajuću odjeću. "
-"Obilazak špilje je moguć samo u pratnji vodiča."
-msgstr "Ukoliko se odlučite posjetiti Manitu peć, u njoj ćete provesti oko 30 minuta u pratnji vodiča i upoznati mnoge
-					tajne tog zanimljivog podzemnog svijeta. Temperatura u špilji cijele godine kreće se oko 9°C, pa vam preporučujemo
-					da u toplijem dijelu godine ponesete odgovarajuću odjeću. Obilazak špilje je moguć samo u pratnji vodiča."
-
-#: templates/paklenica.html:64
-msgid "Neki članak sa strane a ima veze s Paklenicom"
-msgstr "Some side article related to Paklenica"
-
-#: templates/paklenica.html:75 templates/plitvice.html:80
-msgid "Planinarenje"
-msgstr "Mountaineering"
-
-#: templates/paklenica.html:77
-msgid ""
-"Pješačenje je jedini način da stvarno upoznate Paklenicu. Na području "
-"Parka postoji 150-200 km staza i putova,\n"
-"\t\t\t\t\tod turističkih, koji iz kanjona Velike Paklenice vode do špilje"
-" Manite peći, šumarske kuće „Lugarnice“ i\n"
-"\t\t\t\t\tplaninarskog doma, do planinarskih koji vode do najviših "
-"velebitskih vrhova. Putovi u Parku obilježeni su tablama\n"
-"\t\t\t\t\ti markirani planinarskim oznakama."
-msgstr "
-Hiking is the only way to really know Paklenica. In the Park area there are 150-200 km of trails and routes,
-of tourists, who from the canyon of Velika Paklenica lead to the cave Manite kiln, the "Lugarnice" forestry house and
-mountaineering home, up to the mountaineers leading to the highest peak in the valley. Roads in the Park are marked with tablets
-and marked with mountaineering tags."
-
-#: templates/plitvice.html:17
-msgid "Kako do Plitvica?"
-msgstr "How to get there?"
-
-#: templates/plitvice.html:19
-msgid ""
-"Nacionalnom parku moguće je pristupiti državnim cestama:\n"
-"\n"
-"\t\t\t\t\tDC429 (Selište Drežničko – Prijeboj) iz smjera Zagreba/Zadra\n"
-"\t\t\t\t\tDC52 (Vrhovine – Korenica) iz smjera Otočca (A1)\n"
-"\t\t\t\t\tDC42 (Vrbovsko – Grabovac) iz smjera Ogulina (A1)\n"
-"\n"
-"\t\t\t\t\tIstočnim dijelom Parka prolazi cesta DC429 uz koju se nalaze "
-"dvije glavne ulazne recepcije u zonu posjećivanja\n"
-"\t\t\t\t\tjezera Nacionalnog parka, Ulaz 1 i Ulaz 2. Na oba ulaza "
-"osiguran je parking za posjetitelje (s naplatom), a u\n"
-"\t\t\t\t\tneposrednoj blizini ulaza nalaze se i autobusna stajališta."
+#: templates/climbingCalculator.html:10 templates/raftingCalculator.html:10
+msgid "Calculate all your needs!"
 msgstr ""
 
-#: templates/plitvice.html:32
-msgid ""
-"Cestom DC429 prometuju autobusne linije koje povezuju ponajprije "
-"unutrašnjost Hrvatske i obalu. Savjetujemo da\n"
-"\t\t\t\t\taktualan raspored linija potražite u info uredima Parka ili na "
-"web stranici Autobusnog kolodvora Zagreb\n"
-"\t\t\t\t\t<a href=\"https://www.akz.hr/\">(www.akz.hr)</a>. Obzirom da su"
-" glavni ulazi Parka međusobno udaljeni oko 3 km,\n"
-"\t\t\t\t\tpreporučujemo da unaprijed isplanirate\n"
-"\t\t\t\t\tsvoj posjet zbog mogućnosti odabira između različitih programa "
-"obilaska.\n"
-"\n"
-"\t\t\t\t\tRadi boljeg snalaženja i kretanja na području Nacionalnog "
-"parka, preporučujemo našu turističku kartu koju možete\n"
-"\t\t\t\t\tkupiti u našim info uredima (Ulaz 1, Ulaz 2, pomoćni ulaz "
-"Flora, stanica vlakova 3) i suvenirnicama."
+#: templates/climbingCalculator.html:11 templates/raftingCalculator.html:11
+msgid "Simply enter the desired options below"
 msgstr ""
 
-#: templates/plitvice.html:43
-msgid "Aktivnosti u parku"
-msgstr "Park activities"
-
-#: templates/plitvice.html:45
-msgid ""
-"NP Plitvička jezera područje je iznimne bioraznolikosti i georaznolikosti"
-" koje godišnje posjeti preko milijun\n"
-"\t\t\t\t\tposjetitelja, stoga molimo, ne ostavljajte tragove kako bi ovo "
-"zaštićeno područje ostalo očuvano i za buduće\n"
-"\t\t\t\t\tgeneracije, krećite se označenim stazama i poštujte pravila "
-"ponašanja unutar Parka.\n"
-"\n"
-"\t\t\t\t\tŽelite li posjetiti jezersku zonu, na raspolaganju vam je 8 "
-"kružnih programa obilaska, a ukoliko više preferirate\n"
-"\t\t\t\t\tpješačenje u mirnijem okruženju i želite svoj boravak obogatiti"
-" znanjem o šumskim ekosustavima, možete odabrati\n"
-"\t\t\t\t\tneku od 4 planinarske staze. U info uredima Parka potražite "
-"brošuru o planinarskim stazama kao i našu turističku\n"
-"\t\t\t\t\tkartu."
+#: templates/climbingCalculator.html:21 templates/raftingCalculator.html:21
+msgid "Number of persons"
 msgstr ""
 
-#: templates/plitvice.html:54
-msgid ""
-"Pješačke staze u Parku relativno su uske i prolaze ponajviše neravnim "
-"terenom i drvenim mostićima duž obala jezera,\n"
-"\t\t\t\tstoga zbog sigurnosti posjetitelja i posebnosti područja nije "
-"dozvoljeno udaljavanje s označenih pješačkih staza.\n"
-"\t\t\t\tObzirom na karakteristike terena, preporučeno je imati "
-"odgovarajuću odjeću i obuću, kao i zaštitu od kiše i/ili\n"
-"\t\t\t\tsunca."
+#: templates/climbingCalculator.html:23 templates/climbingCalculator.html:32
+#: templates/climbingCalculator.html:39 templates/raftingCalculator.html:23
+#: templates/raftingCalculator.html:32 templates/raftingCalculator.html:39
+msgid "Choose here"
 msgstr ""
 
-#: templates/plitvice.html:66
-msgid "Obilazak jezera"
-msgstr "Lake route"
-
-#: templates/plitvice.html:68
-msgid ""
-"Radi lakšega kretanja u jezerskoj zoni, posjetiteljima koji ulaze u Park "
-"na Ulazu 1 omogućen je izbor između\n"
-"\t\t\t\t\tčetiri programa obilaska označenih zelenom bojom na "
-"informativnim pločama. Četiri programa koji započinju na Ulazu\n"
-"\t\t\t\t\t2 označeni su narančastom bojom.\n"
-"\n"
-"\t\t\t\t\tU Parku prometuju električni brodovi (jezero Kozjak) i vlakovi "
-"za prijevoz posjetitelja, a za čije korištenje je\n"
-"\t\t\t\t\tpotrebno imati važeću <a href=\"https://np-plitvicka-jezera.hr"
-"/planirajte-posjet/cjenik/\">ulaznicu</a> za\n"
-"\t\t\t\t\tNacionalni park.\n"
-"\n"
-"\t\t\t\t\tNajvažnije napomene vezane uz posjet Nacionalnom parku "
-"pogledajte <a href=\"https://np-plitvicka-jezera.hr/planirajte-"
-"posjet/aktivnosti/\">ovdje</a>."
+#: templates/climbingCalculator.html:27
+msgid "4 (free extra ticket!)"
 msgstr ""
 
-#: templates/plitvice.html:82
-msgid ""
-"Potpun doživljaj Nacionalnog parka Plitvička jezera nije moguć bez "
-"upoznavanja šumskih ekosustava koji\n"
-"\t\t\t\t\tprekrivaju više od ¾ njegove površine. Poučne staze imaju za "
-"cilj približiti šumski ekosustav posjetiteljima koji\n"
-"\t\t\t\t\tsvoj boravak u Nacionalnom parku Plitvička jezera žele, uz "
-"aktivni odmor, obogatiti i znanjem o šumama i šumskim\n"
-"\t\t\t\t\tekosustavima te spoznati ulogu šume u očuvanju jezera. Staze "
-"vode kroz velike šumske komplekse i gorske livade s\n"
-"\t\t\t\t\tprekrasnim vidikovcima. Duž staza postavljeni su poučni panoi "
-"čija je osnovna zadaća upoznati posjetitelje sa\n"
-"\t\t\t\t\tšumskim ekosustavima te drugim prirodnim i kulturnim "
-"znamenostima. Osim edukativnog karaktera, zbog svoje duljine\n"
-"\t\t\t\t\ti konfiguracije terena, staze imaju i rekreativni karakter"
+#: templates/climbingCalculator.html:30
+msgid "Rock type"
 msgstr ""
 
-#: templates/plitvice.html:92
-msgid "Biciklizam"
-msgstr "Cycling"
-
-#: templates/plitvice.html:94
-msgid ""
-"Biciklizam nije dopuštena aktivnost na području Nacionalnog parka, no "
-"kretanje biciklima dozvoljeno je\n"
-"\t\t\t\t\tisključivo na državnim cestama DC429, DC42 i DC52.\n"
-"\n"
-"\t\t\t\t\tTemeljem zona zaštite koje su definirane Planom upravljanja "
-"Nacionalnim parkom Plitvička jezera, aktivnost\n"
-"\t\t\t\t\tbiciklizma moguća je u južnom, rubnom dijelu Parka. Na taj se "
-"dio nastavlja organizirana i označena mreža\n"
-"\t\t\t\t\tbiciklističkih staza na području Općine Plitvička Jezera.\n"
-"\t\t\t\t\t<a href=\"https://np-plitvicka-jezera.hr/wp-"
-"content/uploads/2017/10/Plitvice-Active-karta-2016.pdf?x92898\">Ovdje\n"
-"\t\t\t\t\t\tmožete pogledati kartu</a> biciklističkih staza na području "
-"Općine Plitvička Jezera u PDF formatu."
+#: templates/climbingCalculator.html:33 templates/raftingCalculator.html:33
+msgid "Easy one, I'm just a beginner"
 msgstr ""
 
-#~ msgid "Planinarski dom Paklenica"
-#~ msgstr "Mountain Hut Paklenica"
+#: templates/climbingCalculator.html:34 templates/raftingCalculator.html:34
+msgid "Moderate one, I have some experience already"
+msgstr ""
 
-#~ msgid ""
-#~ "Planinarski\n"
-#~ "                                    dom Paklenica"
-#~ msgstr ""
+#: templates/climbingCalculator.html:35
+msgid "Hard mode! I need an adrenaline trip!"
+msgstr ""
 
->>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
+#: templates/climbingCalculator.html:37
+msgid "How high do you want to go?"
+msgstr ""
+
+#: templates/climbingCalculator.html:40
+msgid "Up to 50 meters"
+msgstr ""
+
+#: templates/climbingCalculator.html:41
+msgid "Between 50 and 200 meters"
+msgstr ""
+
+#: templates/climbingCalculator.html:42
+msgid "All the way up top!"
+msgstr ""
+
+#: templates/climbingCalculator.html:49 templates/raftingCalculator.html:49
+msgid "I want to take a full course meal as well"
+msgstr ""
+
+#: templates/climbingCalculator.html:55 templates/raftingCalculator.html:55
+msgid "I need to rent the equipment, I don't have mine"
+msgstr ""
+
+#: templates/climbingCalculator.html:61 templates/raftingCalculator.html:61
+msgid "I want a surprise gift box!"
+msgstr ""
+
+#: templates/getstarted.html:10
+msgid "Start easily with a few tips!"
+msgstr ""
+
+#: templates/getstarted.html:11
+msgid "Read the to-do list below to get yourself ready for the adventure."
+msgstr ""
+
+#: templates/getstarted.html:21
+msgid "Start early"
+msgstr ""
+
+#: templates/getstarted.html:22
+msgid "Bring water"
+msgstr ""
+
+#: templates/getstarted.html:23
+msgid "Watch some videos"
+msgstr ""
+
+#: templates/getstarted.html:24
+msgid "Something else"
+msgstr ""
+
+#: templates/getstarted.html:29
+msgid ""
+"Make sure to start a little earlier than planned. You never know what "
+"sort of traffic issues might happen on your way to the park!"
+msgstr ""
+
+#: templates/getstarted.html:30
+msgid ""
+"Water! There's never enough of it! Make sure to bring some extra bottles,"
+" especially on your mountain climbing trip, you'll dehydrate fast."
+msgstr ""
+
+#: templates/getstarted.html:31
+msgid ""
+"You can watch some videos on YouTube to get yourself familiar with "
+"rafting, climbing and other sort of activities. You can easily catch some"
+" good advice there as well!"
+msgstr ""
+
+#: templates/getstarted.html:35
+msgid "Also, something else, anything really."
+msgstr ""
+
+#: templates/index.html:20
+msgid "ROCK CLIMBING IN PAKLENICA"
+msgstr ""
+
+#: templates/index.html:32
+msgid "RAFTING ON ZRMANJA"
+msgstr ""
+
+#: templates/index.html:44
+msgid "LEAVE YOUR OWN REVIEWS"
+msgstr ""
+
+#: templates/index.html:53
+msgid "Previous"
+msgstr ""
+
+#: templates/index.html:57
+msgid "Next"
+msgstr ""
+
+#: templates/index.html:71
+msgid "Looking for an adventure?"
+msgstr ""
+
+#: templates/index.html:72
+msgid "Start right here!"
+msgstr ""
+
+#: templates/index.html:74
+msgid ""
+"Rafting, rock climbing, you got it! You can easily find any information "
+"you want here. If you need a quick tutorial to get you started, simply "
+"click here!"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Start the tutorial"
+msgstr ""
+
+#: templates/paklenica.html:9
+msgid "Rock Climbing in Paklenica"
+msgstr ""
+
+#: templates/paklenica.html:10
+msgid "Get ready to test your limits!"
+msgstr ""
+
+#: templates/paklenica.html:12 templates/zrmanja.html:12
+msgid "Click here to choose the type of your activity and calculate the price."
+msgstr ""
+
+#: templates/paklenica.html:13 templates/zrmanja.html:13
+msgid "Take the activity"
+msgstr ""
+
+#: templates/paklenica.html:18
+msgid "User reviews of Paklenica climbing"
+msgstr ""
+
+#: templates/paklenica.html:30 templates/paklenica.html:54
+#: templates/zrmanja.html:30 templates/zrmanja.html:54
+msgid "Review"
+msgstr ""
+
+#: templates/paklenica.html:31 templates/paklenica.html:55
+#: templates/zrmanja.html:31 templates/zrmanja.html:55
+msgid "Excitement"
+msgstr ""
+
+#: templates/paklenica.html:37 templates/paklenica.html:61
+#: templates/zrmanja.html:37 templates/zrmanja.html:61
+msgid "Value"
+msgstr ""
+
+#: templates/raftingCalculator.html:27
+msgid "free extra ticket"
+msgstr ""
+
+#: templates/raftingCalculator.html:30
+msgid "Route type"
+msgstr ""
+
+#: templates/raftingCalculator.html:35
+msgid "Hard mode! I need an adrenaline trip"
+msgstr ""
+
+#: templates/raftingCalculator.html:37
+msgid "Duration of your adventure"
+msgstr ""
+
+#: templates/raftingCalculator.html:40
+msgid "Up to 1 hour"
+msgstr ""
+
+#: templates/raftingCalculator.html:41
+msgid "Between 1 and 2 hours"
+msgstr ""
+
+#: templates/raftingCalculator.html:42
+msgid "The entire afternoon!"
+msgstr ""
+
+#: templates/zrmanja.html:9
+msgid "Rafting on Zrmanja"
+msgstr ""
+
+#: templates/zrmanja.html:10
+msgid "Experience a wild ride through river rapids!"
+msgstr ""
+
+#: templates/zrmanja.html:18
+msgid "User reviews of Zrmanja rafting"
+msgstr ""
+

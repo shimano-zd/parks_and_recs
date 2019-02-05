@@ -1,101 +1,331 @@
 {% extends "base.html" %}
 
 {% block content %}
-<<<<<<< HEAD
-=======
-<!-- glavni kontejner u kojeg smjestamo elemente -->
-<div class="naslovnaMainContainer">
 
-	<div class="weatherInfoSection">
-		<p>Temperatura: {{ jsonWeather.main.temp}}°C </p>
-		<p>Tlak zraka: {{ jsonWeather.main.pressure}} hPa</p>
-		<p>Vlažnost: {{ jsonWeather.main.humidity}}%</p>
-	</div>
-	<div class="articleGrid">
+<div class="parkBanner">
+    <img src="../static/images/paklenica_banner.jpg" alt="" style="width: 100%; height: auto;">
+</div>
+<div class="jumbotron">
+    <h1 class="display-4">{% trans %}Rock Climbing in Paklenica{% endtrans %}</h1>
+    <p class="lead">{% trans %}Get ready to test your limits!{% endtrans %}</p>
+    <hr class="my-4">
+    <p>{% trans %}Click here to choose the type of your activity and calculate the price.{% endtrans %}</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('climbingCalculator')}}" role="button">{% trans %}Take the
+        activity{% endtrans %}</a>
+</div>
 
-		<div class="mainColumn">
-			<div class="mainColumn_article">
+<div class="commentsSection">
+    <div class="userExperienceTitle">
+        <h1 class="display-4">{% trans %}User reviews of Paklenica climbing{% endtrans %}</h1>
+    </div>
+    <div class="userExperience">
 
-				<h2 style="color: rgb(247, 200, 72);">{% trans %}Zašto Paklenica?{% endtrans %}</h2>
+        <div class="columnLeft">
+            <div class="card" style="width: 18rem;">
+                <div class="hidden" id="picUserLeftID">{{user1.name}}</div>
+                <img src="" id="picUserLeft" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user1.name }}</h5>
+                    <p class="card-text">{{ user1.comment }}</p>
+                    <div class="marks">
+                        <div class="review">{% trans %}Review{% endtrans %}:</div>
+                        {% trans %}Excitement{% endtrans %}: <div class="hidden" id="fillBarRightTopNum">{{
+                            user1.excitement}}</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" id="fillBarRightTop" role="progressbar" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
 
-				<p>{% trans %}Zbog svoje jedinstvene prirodne osnove, izuzetnih geomorfoloških oblika i veličanstvenih šuma, prostor Velike i
-					Male Paklenice već je 1949. g. proglašen nacionalnim parkom. Osnovni razlog proglašenja ovog prostora nacionalnim
-					parkom bila je zaštita najočuvanijeg i najvećeg šumskog kompleksa na području Dalmacije.{% endtrans %}
+                        {% trans %}Value{% endtrans %}: <div class="hidden" id="fillBarRightBottomNum">{{ user1.price}}</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" id="fillBarRightBottom" role="progressbar" style="width: 50%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columnRight">
+            <div class="card" style="width: 18rem;">
+                <div class="hidden" id="picUserRightID">{{user2.name}}</div>
+                <img src="" id="picUserRight" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user2.name}}</h5>
+                    <p class="card-text">{{ user2.comment}}</p>
+                    <div class="marks">
+                        <div class="review">{% trans %}Review{% endtrans %}:</div>
+                        {% trans %}Excitement{% endtrans %}: <div class="hidden" id="fillBarLeftTopNum">{{
+                            user2.excitement}}</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" id="fillBarLeftTop" role="progressbar" style="width: 20%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
 
-				</p>
-				<iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45626.61712961173!2d15.548932531037591!3d44.37849845993304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476191109568e00d%3A0xb2963721bdd928e4!2sPaklenica+National+Park!5e0!3m2!1sen!2shr!4v1548764617001"
-				 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<p>{% trans %}Nacionalni park Paklenica se prostire na površini od 95 km², na južnim obroncima Velebita, ispod najviših vrhova
-					Vaganskog vrha (1757m) i Svetog brda (1753 m). Obuhvaća područje bujičnih tokova Velike i Male Paklenice, odnosno
-					njihove prepoznatljive kanjone okomito urezane u južne padine Velebita, te širi okolni prostor. Na relativno malom
-					području susreće se iznimno bogatstvo geomorfoloških pojava i oblika, raznolik biljni i životinjski svijet,
-					atraktivni krajolici i netaknuta priroda. Raznolikost živog svijeta je uvjetovana klimatskim karakteristikama ali
-					i bogatom i raznolikom geološkom prošlosti.{% endtrans %}</p>
-			</div>
-
-
-			<div class="mainColumn_article">
-
-				<h2 style="color:rgb(247, 200, 72)">{% trans %}Manita Peć{% endtrans %}</h2>
-
-				<p>{% trans %}Manita peć je jedina špilja na prostoru Parka koja je otvorena i uređena za posjet. Svojom prostranošću i
-					ljepotom ukrasa oduševljava posjetitelje još od davne 1937. godine, kada je nakon uređenja staze započelo njeno
-					posjećivanje. Ulaz u špilju nalazi se na 570 m nadmorske visine, a uspon od parkirališta u Velikoj Paklenici do
-					nje traje oko sat i pol.
-
-					Špilja obiluje špiljskim ukrasima ili sigama. Oni se razlikuju prema obliku i načinu postanka. Najčešći tipovi
-					siga koje možete vidjeti u Manitoj peći su stalagmiti, stalaktiti, sigasti stupovi (stalagnati) i špiljske
-					kamenice (kaskade). Neki od tih ukrasa dobili su imena po svojim zanimljivim oblicima, primjerice kaciga, orgulje
-					i vještica.{% endtrans %}</p>
-				<img src="../static/images/paklenica_spilja.jpg" alt="">
-				<p>
-
-					{% trans %}Ukoliko se odlučite posjetiti Manitu peć, u njoj ćete provesti oko 30 minuta u pratnji vodiča i upoznati mnoge
-					tajne tog zanimljivog podzemnog svijeta. Temperatura u špilji cijele godine kreće se oko 9°C, pa vam preporučujemo
-					da u toplijem dijelu godine ponesete odgovarajuću odjeću. Obilazak špilje je moguć samo u pratnji vodiča.{% endtrans %}
-
-				</p>
+                        {% trans %}Value{% endtrans %}: <div class="hidden" id="fillBarLeftBottomNum">{{ user2.price}}</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" id="fillBarLeftBottom" role="progressbar" style="width: 70%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columnRight">
 
 
-			</div>
-		</div>
-
-
-		<div class="sideColumn">
-			<div class="sideColumn_article">
-				<h2 style="color:rgb(247, 200, 72)">{% trans %}Neki članak sa strane a ima veze s Paklenicom{% endtrans %}</h2>
-				<img src="../static/images/paklenica_prolaz.jpg" alt="">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis impedit alias ipsa atque omnis sequi
-					architecto repellat eum, nulla nemo eligendi aut quam. Ipsa molestiae velit voluptatibus quia nisi facilis nemo a
-					aliquid, deserunt sint fugiat dignissimos placeat impedit architecto excepturi minus quas inventore cumque!
-					Explicabo perspiciatis eligendi dolorum quod facere vero repellat quas excepturi itaque quo assumenda eius,
-					voluptas ipsum quasi debitis officia. Dignissimos cumque quidem id corrupti blanditiis alias maiores eos,
-					molestias autem vitae mollitia doloribus pariatur?</p>
-
-			</div>
-			<div class="sideColumn_article">
-				<h2 style="color:rgb(247, 200, 72)">{% trans %}Planinarenje{% endtrans %}</h2>
-				<img src="../static/images/paklenica_planinarenje.jpg" alt="">
-				<p>{% trans %}Pješačenje je jedini način da stvarno upoznate Paklenicu. Na području Parka postoji 150-200 km staza i putova,
-					od turističkih, koji iz kanjona Velike Paklenice vode do špilje Manite peći, šumarske kuće „Lugarnice“ i
-					planinarskog doma, do planinarskih koji vode do najviših velebitskih vrhova. Putovi u Parku obilježeni su tablama
-					i markirani planinarskim oznakama.{% endtrans %}</p>
-
-			</div>
-		</div>
-
-	</div>
+        </div>
 
 
 
+    </div>
+
+    <div class="userComment">
+        <div class="userCommentText"><h5>{% trans %}Want to subscribe? We'll keep you updated on any special deals{% endtrans %}</h5></div>
+        <div class="userCommentButton">
+                <a href="{{url_for('subscribe')}}"><button type="button" class="btn btn-primary btn-lg">{% trans %}Subscribe{% endtrans %}</button></a>
+                
+
+        </div>
+    </div>
+</div>
+
+<div class="parkInformationWrapper">
+    <div class="jumbotron jumbotronMap">
+        <h1 class="display-4">{% trans %}General Information about the Park{% endtrans %}</h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">{% trans %}Map{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+                        role="tab" aria-controls="profile">{% trans %}Weather{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
+                        role="tab" aria-controls="messages">{% trans %}Gallery{% endtrans %}</a>
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <iframe class="frameMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182596.16246066435!2d15.338683035324483!3d44.34971509693639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476191109568e00d%3A0xb2963721bdd928e4!2sPaklenica+National+Park!5e0!3m2!1sen!2shr!4v1549285666457"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                        <div class="weatherGrid">
+
+                            <div class="weatherGridTemp"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_temp.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text weatherLabel">{% trans %}Temperature{% endtrans %}:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp}}°C</p>
+                                    <p class="card-text weatherLabel">Minimum:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp_min}}°C</p>
+                                    <p class="card-text weatherLabel">Maximum:</p>
+                                    <p class="weatherInfo">{{ jsonWeather.main.temp_max}}°C</p>
+                                </div>
+                            </div>
+                            <div class="weatherGridRain"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_rain.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text weatherLabel">{% trans %}Humidity{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.main.humidity}}%</p>
+                                    <p class="card-text weatherLabel">{% trans %}Rain past 3 hours{% endtrans %}: </p>
+
+                                    <p class="weatherInfo">Sorry, the API is broken :(</p>
+                                </div>
+                            </div>
+                            <div class="weatherGridClouds"></div>
+                            <div class="card weatherCard" style="width: 18rem;">
+                                <img src="../static/images/weather_sky.jpg" class="card-img-top" alt="...">
+                                <div class="card-body weatherLabel">
+                                    <p class="card-text weatherLabel">{% trans %}Sky{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.weather[0].description}}</p>
+                                    <p class="card-text weatherLabel">{% trans %}Wind{% endtrans %}: </p>
+                                    <p class="weatherInfo">{{jsonWeather.wind.speed}}&nbsp;km/h</p>
+                                </div>
+                            </div>
+
+                        </div>
 
 
 
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
 
+                        <div class="galleryGrid">
+
+                            <div class="topLeft">
+
+                                <img src="../static/images/paklenica_gallery_climber.jpg" data-toggle="modal" data-target="#exampleModalCenter1"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_climber.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="topCenter">
+                                    <img src="../static/images/paklenica_gallery_rock.jpg" data-toggle="modal" data-target="#exampleModalCenter2"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_rock.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="topRight">
+
+                                    <img src="../static/images/paklenica_gallery_team.jpg" data-toggle="modal" data-target="#exampleModalCenter3"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_team.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomLeft">
+                                    <img src="../static/images/paklenica_gallery_gecko.jpg" data-toggle="modal" data-target="#exampleModalCenter4"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_gecko.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomCenter">
+                                    <img src="../static/images/paklenica_gallery_sunset.jpg" data-toggle="modal" data-target="#exampleModalCenter5"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_sunset.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomRight">
+                                    <img src="../static/images/paklenica_gallery_greenshirt.jpg" data-toggle="modal" data-target="#exampleModalCenter6"
+                                    style="width:80%;height:auto;cursor: pointer;" alt="">
+
+                                <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <img src="../static/images/paklenica_gallery_greenshirt.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </div>
->>>>>>> a22af8c03517cb20b9efa45e1fa2c9a122974671
+
+<script>
+    function fillElements() {
+        let elements = document.getElementsByClassName("progress-bar");
+
+        for (let e of elements) {
 
 
+            let barID = e.id;
+            let barNumID = e.id + "Num";
+            let barNumElem = document.getElementById(barNumID);
+            let num = barNumElem.innerHTML
+
+
+            fillPercent(barID, num);
+
+        }
+    }
+    fillElements();
+    changeLeftPicture();
+    changeRightPicture();
+
+    function changeLeftPicture() {
+        let leftPicture = document.getElementById("picUserLeft");
+        let username = document.getElementById("picUserLeftID").innerHTML;
+        leftPicture.src = "../static/images/" + username + ".jpg";
+
+    }
+
+    function changeRightPicture() {
+        let rightPicture = document.getElementById("picUserRight");
+        let username = document.getElementById("picUserRightID").innerHTML;
+        rightPicture.src = "../static/images/" + username + ".jpg";
+    }
+
+    function fillPercent(barID, num) {
+
+        let width = 1;
+        let id = setInterval(frame, 2);
+        let elem = document.getElementById(barID)
+
+        function frame() {
+            (width >= num) ? clearInterval(id): width++;
+            elem.style.width = width + '%'
+
+        }
+
+    }
+</script>
 
 {% endblock %}

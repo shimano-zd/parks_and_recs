@@ -32,4 +32,4 @@ Sve stranice koje se nude korisnicima su dostupne u ENG i HR verzijama.
 Aplikacija podržava *handling* dva osnovna tipa greške, 404 i 500, tako da se korisniku prikaže odgovarajuća poruka na ekranu umjesto "ružnog" ispisa kojeg bi inače dobio.
 
 ### Azure Deployment
-S obzirom da imam Azure account i subscription, pokušao sam *deployati* aplikaciju na Azure. Nažalost, nakon nekoliko pokušaja i dalje nisam uspio doći do faze u kojoj je aplikacija dostupna i stabilna online. Sljedio sam upute s predavanja, ali dobivam *application error* na stranici [https://flask-parks.azurewebsites.net/](https://flask-parks.azurewebsites.net/).
+S obzirom da imam Azure account i subscription, pokušao sam *deployati* aplikaciju na Azure. Nažalost, nakon nekoliko pokušaja i dalje nisam uspio doći do faze u kojoj je aplikacija dostupna i stabilna online. Sljedio sam upute s predavanja, ali dobivam *application error* na stranici [https://flask-parks.azurewebsites.net/](https://flask-parks.azurewebsites.net/). Nadam se da ću uspjeti to srediti...
